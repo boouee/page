@@ -1,0 +1,819 @@
+<html lang="ru" class="page js-focus-visible" data-js-focus-visible="" style="--app-height: 919px;"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://vent2.designoffuture.ru/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>MaxGraph New Site</title>
+  <link rel="preload" href="https://vent2.designoffuture.ru/fonts/SegoeUI-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://vent2.designoffuture.ru/fonts/SegoeUI-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://vent2.designoffuture.ru/fonts/SegoeUI.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="https://vent2.designoffuture.ru/css/vendor.css">
+  <link rel="stylesheet" href="https://vent2.designoffuture.ru/css/main.css">
+  <script defer="" src="https://vent2.designoffuture.ru/js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    
+    <main class="main">
+      <div class="swiper main-slider swiper-initialized swiper-vertical swiper-backface-hidden">
+        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); transition-delay: 0ms;">
+          <div class="swiper-slide swiper-slide-active" style="height: 919px;">
+
+            <section style="padding-top: -50px">
+  <div class="hero__background">
+    <canvas class="canvas canvas_fluid"></canvas>
+  </div>
+  <h2 class="equipment__title" style="padding-top: 50px">Управляем климатом</h2>
+  <div class="container hero__container">
+    <div id="container"></div>
+    <div class="hero__top">
+      <h1 class="hero__title">
+        <span>
+          Вентарт
+          <!-- <svg width="107" height="74" viewBox="0 0 107 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24.8578 1.74538C23.4635 2.69609 22.3016 3.88449 22.3016 4.43908C22.3016 4.99366 21.0622 6.34052 19.5905 7.52892C17.499 9.11345 16.8793 10.2226 16.8793 12.0448C16.8793 13.3917 16.4146 15.0554 15.8723 15.6892C15.3301 16.4023 14.4006 18.5414 13.8583 20.5221C13.3161 22.5027 12.5415 25.1172 12.0767 26.4641C11.6894 27.7317 11.0697 30.1085 10.6824 31.6138C9.52052 37.2389 7.11923 42.3094 5.33762 43.1809C4.33063 43.7355 3.16871 44.6069 2.85886 45.2408C1.77441 46.9837 2.08425 51.262 3.40109 52.0542C4.33063 52.6088 4.40809 53.1634 3.7884 54.6687C2.3941 58.3131 0.457562 68.4541 0.767407 71.2271L0.999791 74L2.70394 72.0986C4.25316 70.3556 4.95032 68.2957 6.80939 59.7392C8.591 51.262 10.6824 49.2813 20.3651 46.3499C22.9213 45.5577 25.7874 44.6069 26.7169 44.1316C29.8153 42.5471 30.1252 43.7355 29.9703 56.8078C29.9703 64.2551 30.2026 69.3256 30.6674 69.4841C31.0547 69.5633 31.5969 69.088 31.9068 68.3749C32.5265 66.7112 34.9278 46.9045 34.7729 44.4485C34.7729 43.4185 35.0827 41.9132 35.5475 41.0418C36.0122 40.091 36.0897 39.0611 35.6249 38.5065C35.2376 37.9519 34.9278 33.1191 34.8503 27.6525C34.6954 13.4709 34.463 12.5202 30.7449 10.3811L27.6464 8.55886L28.1887 4.2014C28.4211 1.8246 28.3436 -0.0768376 28.0337 0.00238898C27.6464 0.00238898 26.1747 0.794657 24.8578 1.74538ZM26.4071 19.4129C27.3366 20.5221 28.421 22.7404 28.8083 24.3249C29.7379 28.7616 30.2026 37.3973 29.428 38.5857C28.7309 39.6157 15.7949 41.4379 14.0133 40.8041C12.8514 40.3287 12.619 37.9519 13.7809 37.9519C14.2457 37.9519 14.5555 37.0804 14.5555 36.0505C14.5555 34.9413 14.8653 33.9114 15.2527 33.6737C15.64 33.436 16.1822 31.9307 16.4146 30.4254C16.7244 28.9201 17.2666 27.6525 17.654 27.6525C18.1187 27.6525 18.4286 27.1771 18.4286 26.6225C18.4286 24.5626 22.3016 17.353 23.4635 17.353C24.0832 17.353 25.4001 18.3037 26.4071 19.4129Z"
+              fill="#09AEEC" />
+            <path
+              d="M83.496 2.06227C79.623 3.32989 78.8483 4.20138 78.8483 7.13276C78.8483 10.7772 77.2217 11.6487 74.2007 9.43034C73.0387 8.55884 71.7994 7.84581 71.567 7.84581C71.2572 7.84581 69.7854 6.97431 68.1587 5.94437C65.0602 3.9637 55.9198 2.22072 53.596 3.17144C51.3496 4.04293 47.8639 7.5289 47.8639 8.79653C47.8639 9.43034 47.4766 10.3018 47.0118 10.7772C46.3921 11.411 46.3921 11.8071 47.0118 12.124C47.554 12.5202 47.8639 17.2738 47.8639 26.0679C47.8639 39.378 47.8639 39.4572 45.9273 40.9625C43.681 42.7847 43.4486 45.1615 45.2302 46.7461C46.3147 47.6175 46.3921 49.1229 46.0048 56.9663C45.4626 66.6319 46.1597 70.0387 48.0963 66.8696C48.561 65.9981 49.4131 62.6706 49.9553 59.4223C51.1172 51.8958 51.6595 51.3412 55.3001 54.2726C56.8494 55.5402 59.2507 57.3624 60.7224 58.3924C62.1942 59.3431 63.3561 60.5315 63.3561 60.9276C63.3561 61.403 63.8209 61.7199 64.3631 61.7199C64.9828 61.7199 66.0672 62.5121 66.9193 63.3836C67.6939 64.3344 69.0882 65.3643 69.9403 65.7604C71.567 66.5527 74.3556 68.2165 74.9753 68.8503C75.9823 69.8802 81.2496 72.1778 81.6369 71.7816C82.489 70.9102 81.1722 65.6812 80.0877 65.6812C79.5455 65.6812 78.3061 64.8097 77.2991 63.7005C76.2921 62.5914 75.2077 61.7199 74.8204 61.7199C74.4331 61.7199 71.1022 58.7093 67.3841 54.9856C63.666 51.262 60.1027 48.0929 59.4831 47.8552C57.9338 47.3799 55.61 43.3393 55.61 41.3586C55.61 40.2495 56.5395 39.4572 58.7084 38.7442C60.4126 38.1896 62.1942 37.2389 62.659 36.605C63.1237 36.0505 63.8983 35.5751 64.2856 35.5751C64.6729 35.5751 65.9123 34.7036 67.0742 33.5944C68.2362 32.4853 69.4755 31.6138 69.7854 31.6138C70.6375 31.6138 74.3556 28.7616 77.454 25.751C79.7779 23.4534 79.8553 23.295 79.3906 17.6699L78.8483 11.9656L83.8833 10.698C91.8618 8.63807 91.4745 8.32116 90.9323 16.7192C90.6999 20.7597 90.1577 26.3848 89.6929 29.237C88.9958 34.4659 88.4535 67.1073 89.1507 67.8203C89.3831 67.9788 90.2351 67.6619 91.1647 67.1073C92.6364 66.2358 92.7914 65.2851 92.8688 58.9469C92.9463 55.0648 93.1012 51.1035 93.2561 50.232C93.411 49.3605 93.8758 45.2407 94.3406 41.121C94.7279 37.0012 95.425 32.3268 95.8898 30.8215C96.6644 27.8901 97.2067 24.8003 97.9813 18.6998C98.3686 15.5308 98.1362 14.4216 96.7419 12.5994C93.9533 8.63807 94.4955 7.60813 99.2206 8.08349C101.39 8.24194 104.023 8.7173 105.03 9.0342C106.579 9.58879 106.734 9.35111 106.734 6.41973C106.734 3.9637 106.347 2.93376 105.263 2.29995C103.791 1.50768 85.7424 1.27 83.496 2.06227ZM65.4476 12.9955C73.1162 16.5607 75.595 21.7105 71.4121 25.4341C70.3276 26.464 68.3911 28.207 67.1517 29.3954C65.8349 30.6631 64.2856 31.6138 63.7434 31.6138C63.1237 31.6138 62.504 31.9307 62.2716 32.3268C61.652 33.3568 55.7649 36.3674 54.4481 36.3674C53.5185 36.3674 53.3636 35.4959 53.7509 31.7722C54.0608 29.3162 54.5255 26.9394 54.9128 26.4641C55.3001 26.0679 55.61 23.8496 55.61 21.552V17.2738L52.8988 17.8284C50.2652 18.3037 50.1877 18.2245 50.1877 16.0061C50.1877 13.7086 51.7369 11.5695 54.0608 10.8564C56.2297 10.1434 61.4196 11.0941 65.4476 12.9955Z"
+              fill="#09AEEC" />
+          </svg> -->
+        </span> Групп
+      </h1>
+      <p class="hero__subtitle">
+        Создаем комфортный климат в&nbsp;любом месте
+      </p>
+    </div>
+    <div class="hero__bottom">
+      <p class="hero__desc">
+        Производим и&nbsp;поставляем оборудование бытового и&nbsp;промышленного назначения
+      </p>
+      <p class="hero__desc">
+        Платиновый участник ежегодной Международной специализированной выставки «Мир Климата»
+      </p>
+    </div>
+  </div>
+</section>
+          </div>
+          <div class="swiper-slide swiper-slide-next" style="height: 919px;">
+            <section class="equipment">
+  <div class="equipment__container">
+    <h2 class="equipment__title">Оснащение</h2>
+    <div class="swiper equipment__slider">
+      <div class="equipment__background swiper-wrapper">
+        <div class="equipment__image swiper-slide" data-tab="1">
+          <img src="https://vent2.designoffuture.ru/img/equip/01.webp" alt="">
+        </div>
+        <div class="equipment__image swiper-slide" data-tab="2">
+          <img src="https://vent2.designoffuture.ru/img/equip/02.webp" alt="">
+        </div>
+        <div class="equipment__image swiper-slide" data-tab="4">
+          <img src="https://vent2.designoffuture.ru/img/equip/03.webp" alt="">
+        </div>
+        <div class="equipment__image swiper-slide" data-tab="3">
+          <img src="https://vent2.designoffuture.ru/img/equip/04.webp" alt="">
+        </div>
+        <div class="equipment__image swiper-slide active" data-tab="5">
+          <img src="https://vent2.designoffuture.ru/img/equip/05.webp" alt="">
+        </div>
+        <div class="equipment__image swiper-slide" data-tab="6">
+          <img src="https://vent2.designoffuture.ru/img/equip/06.webp" alt="">
+        </div>
+      </div>
+      <div class="swiper equipment__slider-items">
+        <div class="equipment__arrows">
+          <div class="equipment__arr equipment__arr--prev">
+            <span></span>
+          </div>
+          <div class="equipment__arr equipment__arr--next">
+            <span></span>
+          </div>
+        </div>
+        <div class="equipment__items swiper-wrapper">
+          <div class="equipment__item swiper-slide equip" data-tab="1">
+            <span class="equip__text">Жилых домов</span>
+          </div>
+          <div class="equipment__item swiper-slide equip" data-tab="2">
+            <span class="equip__text">Торговых центров</span>
+          </div>
+          <div class="equipment__item swiper-slide equip" data-tab="3">
+            <span class="equip__text">Поликлиник</span>
+          </div>
+          <div class="equipment__item swiper-slide equip" data-tab="4">
+            <span class="equip__text">Бизнес-центров</span>
+          </div>
+          <div class="equipment__item swiper-slide equip active" data-tab="5">
+            <span class="equip__text">Школ</span>
+          </div>
+          <div class="equipment__item swiper-slide equip" data-tab="6">
+            <span class="equip__text">Производств</span>
+          </div>
+        </div>
+      </div>
+      <div class="equipment__control">
+        <div class="eq__menu">
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+        <div class="equipment__pagination swiper-paginataion"></div>
+        <div></div>
+      </div>
+    </div>
+    <p class="equipment__subtitle">Для тех, кто ценит климат и&nbsp;качество воздуха</p>
+  </div>
+
+</section>
+          </div>
+          <div class="swiper-slide no-swiper" style="height: 919px;">
+            <section class="popular">
+  <div class="container">
+    <div class="popular__header">
+      <h2 class="title2 popular__title">Популярные категории</h2>
+      <div class="popular__control">
+        <button class="btn-reset popular__control-btn cat-prev swiper-button-disabled" disabled="">
+          <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.2108 21.461C11.2614 21.4091 11.3015 21.3474 11.3288 21.2795C11.3562 21.2116 11.3702 21.1389 11.3702 21.0654C11.3702 20.9919 11.3562 20.9191 11.3288 20.8512C11.3015 20.7833 11.2614 20.7217 11.2108 20.6697L2.35637 11.5591L24.9565 11.5591C25.1007 11.5591 25.2389 11.5002 25.3408 11.3953C25.4427 11.2905 25.5 11.1482 25.5 10.9999C25.5 10.8516 25.4427 10.7094 25.3408 10.6045C25.2389 10.4997 25.1007 10.4407 24.9565 10.4407L2.35637 10.4407L11.2108 1.33013C11.2613 1.27817 11.3014 1.2165 11.3287 1.14861C11.356 1.08073 11.3701 1.00798 11.3701 0.934501C11.3701 0.861026 11.356 0.788271 11.3287 0.720389C11.3014 0.652507 11.2613 0.590828 11.2108 0.538873C11.1603 0.486919 11.1004 0.445706 11.0344 0.417589C10.9685 0.389471 10.8977 0.375 10.8263 0.375C10.7549 0.375 10.6842 0.389471 10.6182 0.417589C10.5523 0.445706 10.4923 0.486919 10.4418 0.538874L0.659392 10.6043C0.608863 10.6562 0.568777 10.7179 0.541428 10.7858C0.514078 10.8537 0.5 10.9264 0.5 10.9999C0.5 11.0734 0.514078 11.1462 0.541428 11.2141C0.568777 11.282 0.608863 11.3436 0.659392 11.3956L10.4418 21.461C10.4923 21.513 10.5522 21.5542 10.6182 21.5824C10.6842 21.6105 10.7549 21.625 10.8263 21.625C10.8978 21.625 10.9685 21.6105 11.0345 21.5824C11.1004 21.5542 11.1604 21.513 11.2108 21.461Z" fill="#397A9E" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #6ba8ca;"></path>
+          </svg>
+        </button>
+        <button class="btn-reset popular__control-btn cat-next">
+          <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.7892 21.461C14.7386 21.4091 14.6985 21.3474 14.6712 21.2795C14.6438 21.2116 14.6298 21.1389 14.6298 21.0654C14.6298 20.9919 14.6438 20.9191 14.6712 20.8512C14.6985 20.7833 14.7386 20.7217 14.7892 20.6697L23.6436 11.5591L1.04347 11.5591C0.899333 11.5591 0.761098 11.5002 0.659179 11.3953C0.557258 11.2905 0.500001 11.1482 0.500001 10.9999C0.500001 10.8516 0.557258 10.7094 0.659179 10.6045C0.761098 10.4997 0.899334 10.4407 1.04347 10.4407L23.6436 10.4407L14.7892 1.33013C14.7387 1.27817 14.6986 1.2165 14.6713 1.14861C14.644 1.08073 14.6299 1.00798 14.6299 0.934501C14.6299 0.861026 14.644 0.788271 14.6713 0.720389C14.6986 0.652507 14.7387 0.590828 14.7892 0.538873C14.8397 0.486919 14.8996 0.445706 14.9656 0.417589C15.0315 0.389471 15.1023 0.375 15.1737 0.375C15.2451 0.375 15.3158 0.389471 15.3818 0.417589C15.4477 0.445706 15.5077 0.486919 15.5582 0.538874L25.3406 10.6043C25.3911 10.6562 25.4312 10.7179 25.4586 10.7858C25.4859 10.8537 25.5 10.9264 25.5 10.9999C25.5 11.0734 25.4859 11.1462 25.4586 11.2141C25.4312 11.282 25.3911 11.3436 25.3406 11.3956L15.5582 21.461C15.5077 21.513 15.4478 21.5542 15.3818 21.5824C15.3158 21.6105 15.2451 21.625 15.1737 21.625C15.1022 21.625 15.0315 21.6105 14.9655 21.5824C14.8996 21.5542 14.8396 21.513 14.7892 21.461Z" fill="#397A9E" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #6ba8ca;"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="popular__categories cat">
+    <div class="swiper cat__slider swiper-initialized swiper-horizontal swiper-backface-hidden">
+      <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); width: 1630px;">
+        <div class="swiper-slide swiper-slide-active" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/01-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/01-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/01.png" srcset="https://vent2.designoffuture.ru/img/products/01-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Вентиляторы</div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-next" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/04-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/04-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/04.png" srcset="https://vent2.designoffuture.ru/img/products/04-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Регуляторы скорости</div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/02-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/02-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/02.png" srcset="https://vent2.designoffuture.ru/img/products/02-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Воздухо-распределители</div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/05-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/05-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/05.png" srcset="https://vent2.designoffuture.ru/img/products/05-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Теплоизоляционные материалы</div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/07-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/07-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/07.png" srcset="https://vent2.designoffuture.ru/img/products/07-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Вентиляторы дымоудаления</div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/02-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/02-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/02.png" srcset="https://vent2.designoffuture.ru/img/products/02-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Воздухо-распределители</div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/05-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/05-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/05.png" srcset="https://vent2.designoffuture.ru/img/products/05-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Теплоизоляционные материалы</div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/07-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/07-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/07.png" srcset="https://vent2.designoffuture.ru/img/products/07-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Вентиляторы дымоудаления</div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/02-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/02-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/02.png" srcset="https://vent2.designoffuture.ru/img/products/02-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Воздухо-распределители</div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="">
+          <div class="cat__item cat-item">
+            <div class="cat-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/05-2x.webp" media="(min-width: 1440px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/05-2x.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/05.png" srcset="https://vent2.designoffuture.ru/img/products/05-2x.png" alt="">
+              </picture>
+            </div>
+            <div class="cat-item__title">Теплоизоляционные материалы</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popular__container container">
+    <div class="popular__header">
+      <h2 class="title2 popular__title">Новинки</h2>
+      <div class="popular__control">
+        <button class="btn-reset popular__control-btn popular__control-btn--prev pop-prev swiper-button-disabled" disabled="">
+          <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.2108 21.461C11.2614 21.4091 11.3015 21.3474 11.3288 21.2795C11.3562 21.2116 11.3702 21.1389 11.3702 21.0654C11.3702 20.9919 11.3562 20.9191 11.3288 20.8512C11.3015 20.7833 11.2614 20.7217 11.2108 20.6697L2.35637 11.5591L24.9565 11.5591C25.1007 11.5591 25.2389 11.5002 25.3408 11.3953C25.4427 11.2905 25.5 11.1482 25.5 10.9999C25.5 10.8516 25.4427 10.7094 25.3408 10.6045C25.2389 10.4997 25.1007 10.4407 24.9565 10.4407L2.35637 10.4407L11.2108 1.33013C11.2613 1.27817 11.3014 1.2165 11.3287 1.14861C11.356 1.08073 11.3701 1.00798 11.3701 0.934501C11.3701 0.861026 11.356 0.788271 11.3287 0.720389C11.3014 0.652507 11.2613 0.590828 11.2108 0.538873C11.1603 0.486919 11.1004 0.445706 11.0344 0.417589C10.9685 0.389471 10.8977 0.375 10.8263 0.375C10.7549 0.375 10.6842 0.389471 10.6182 0.417589C10.5523 0.445706 10.4923 0.486919 10.4418 0.538874L0.659392 10.6043C0.608863 10.6562 0.568777 10.7179 0.541428 10.7858C0.514078 10.8537 0.5 10.9264 0.5 10.9999C0.5 11.0734 0.514078 11.1462 0.541428 11.2141C0.568777 11.282 0.608863 11.3436 0.659392 11.3956L10.4418 21.461C10.4923 21.513 10.5522 21.5542 10.6182 21.5824C10.6842 21.6105 10.7549 21.625 10.8263 21.625C10.8978 21.625 10.9685 21.6105 11.0345 21.5824C11.1004 21.5542 11.1604 21.513 11.2108 21.461Z" fill="#397A9E" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #6ba8ca;"></path>
+          </svg>
+        </button>
+        <button class="btn-reset popular__control-btn popular__control-btn--next pop-next">
+          <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.7892 21.461C14.7386 21.4091 14.6985 21.3474 14.6712 21.2795C14.6438 21.2116 14.6298 21.1389 14.6298 21.0654C14.6298 20.9919 14.6438 20.9191 14.6712 20.8512C14.6985 20.7833 14.7386 20.7217 14.7892 20.6697L23.6436 11.5591L1.04347 11.5591C0.899333 11.5591 0.761098 11.5002 0.659179 11.3953C0.557258 11.2905 0.500001 11.1482 0.500001 10.9999C0.500001 10.8516 0.557258 10.7094 0.659179 10.6045C0.761098 10.4997 0.899334 10.4407 1.04347 10.4407L23.6436 10.4407L14.7892 1.33013C14.7387 1.27817 14.6986 1.2165 14.6713 1.14861C14.644 1.08073 14.6299 1.00798 14.6299 0.934501C14.6299 0.861026 14.644 0.788271 14.6713 0.720389C14.6986 0.652507 14.7387 0.590828 14.7892 0.538873C14.8397 0.486919 14.8996 0.445706 14.9656 0.417589C15.0315 0.389471 15.1023 0.375 15.1737 0.375C15.2451 0.375 15.3158 0.389471 15.3818 0.417589C15.4477 0.445706 15.5077 0.486919 15.5582 0.538874L25.3406 10.6043C25.3911 10.6562 25.4312 10.7179 25.4586 10.7858C25.4859 10.8537 25.5 10.9264 25.5 10.9999C25.5 11.0734 25.4859 11.1462 25.4586 11.2141C25.4312 11.282 25.3911 11.3436 25.3406 11.3956L15.5582 21.461C15.5077 21.513 15.4478 21.5542 15.3818 21.5824C15.3158 21.6105 15.2451 21.625 15.1737 21.625C15.1022 21.625 15.0315 21.6105 14.9655 21.5824C14.8996 21.5542 14.8396 21.513 14.7892 21.461Z" fill="#397A9E" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #6ba8ca;"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="swiper popular__slider popular__slider--pop swiper-initialized swiper-horizontal swiper-backface-hidden">
+      <div class="popular__items swiper-wrapper" style="width: 1547px;">
+        <div class="swiper-slide swiper-slide-active" style="width: 224.2px;">
+          <div class="popular__item popular-item popular-item--light">
+            <a href="https://vent2.designoffuture.ru/#" class="popular-item__theme">
+              Вентиляторы
+            </a>
+            <div class="popular-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/01-2x.webp" media="(min-width: 1400px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/01.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/01.png" srcset="https://vent2.designoffuture.ru/img/products/01-2x.png" alt="">
+              </picture>
+            </div>
+            <span class="popular-item__title">Канальный вентилятор Airone ВКК</span>
+            <div class="popular-item__buttons">
+              <button class="popular-item__btn popular-item__btn--like btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.83333 30.625H29.1667C29.5534 30.625 29.9244 30.4714 30.1979 30.1979C30.4714 29.9244 30.625 29.5534 30.625 29.1667V5.83333C30.625 5.44656 30.4714 5.07563 30.1979 4.80214C29.9244 4.52865 29.5534 4.375 29.1667 4.375H5.83333C5.44656 4.375 5.07563 4.52865 4.80214 4.80214C4.52865 5.07563 4.375 5.44656 4.375 5.83333V29.1667C4.375 29.5534 4.52865 29.9244 4.80214 30.1979C5.07563 30.4714 5.44656 30.625 5.83333 30.625ZM11.3925 12.9894C11.765 12.6123 12.2086 12.313 12.6976 12.1087C13.1866 11.9044 13.7114 11.7992 14.2414 11.7992C14.7713 11.7992 15.2961 11.9044 15.7851 12.1087C16.2741 12.313 16.7177 12.6123 17.0902 12.9894L17.4971 13.3962L17.9025 12.9894C18.275 12.6123 18.7186 12.313 19.2076 12.1087C19.6966 11.9044 20.2214 11.7992 20.7514 11.7992C21.2813 11.7992 21.8061 11.9044 22.2951 12.1087C22.7841 12.313 23.2277 12.6123 23.6002 12.9894C23.9774 13.3617 24.2769 13.8053 24.4813 14.2944C24.6858 14.7834 24.791 15.3082 24.791 15.8382C24.791 16.3683 24.6858 16.893 24.4813 17.3821C24.2769 17.8711 23.9774 18.3147 23.6002 18.6871L17.4971 24.7917L11.391 18.6871C11.0143 18.3144 10.7152 17.8707 10.5111 17.3816C10.3071 16.8926 10.202 16.3679 10.2022 15.8379C10.2023 15.308 10.3076 14.7833 10.5119 14.2944C10.7162 13.8054 11.0155 13.3619 11.3925 12.9894Z"></path>
+                </svg>
+              </button>
+              <span class="popular-item__price">7500</span>
+              <button class="popular-item__btn popular-item__btn--cart btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.0447 8.4C30.9935 8.33844 30.9293 8.28891 30.8568 8.25489C30.7842 8.22087 30.7051 8.2032 30.625 8.20312H8.11289L7.19961 3.18281C7.1766 3.05705 7.11024 2.94332 7.01208 2.86139C6.91392 2.77947 6.79016 2.73452 6.6623 2.73438H3.28125C3.13621 2.73438 2.99711 2.79199 2.89455 2.89455C2.79199 2.99711 2.73438 3.13621 2.73438 3.28125C2.73438 3.42629 2.79199 3.56539 2.89455 3.66795C2.99711 3.77051 3.13621 3.82812 3.28125 3.82812H6.20566L7.12031 8.85938L9.77402 23.4582C9.89636 24.1254 10.2623 24.7233 10.8008 25.1357C10.2367 25.4993 9.79761 26.0272 9.54282 26.648C9.28802 27.2689 9.22974 27.953 9.37584 28.608C9.52193 29.2631 9.86538 29.8576 10.3599 30.3113C10.8543 30.7651 11.4761 31.0563 12.1412 31.1458C12.8064 31.2352 13.4829 31.1185 14.0797 30.8114C14.6765 30.5043 15.1647 30.0217 15.4786 29.4285C15.7925 28.8353 15.917 28.1601 15.8352 27.494C15.7534 26.8278 15.4694 26.2028 15.0213 25.7031H23.26C22.759 26.2632 22.4655 26.9782 22.4284 27.7287C22.3913 28.4792 22.613 29.2197 23.0562 29.8264C23.4995 30.4331 24.1376 30.8693 24.8639 31.0621C25.5901 31.2548 26.3606 31.1925 27.0464 30.8855C27.7322 30.5784 28.2919 30.0453 28.6318 29.3752C28.9718 28.7051 29.0715 27.9387 28.9142 27.2039C28.757 26.4691 28.3523 25.8106 27.7678 25.3384C27.1834 24.8661 26.4545 24.6088 25.7031 24.6094H12.4646C12.0807 24.6092 11.7089 24.4743 11.4141 24.2282C11.1193 23.9822 10.9202 23.6405 10.8514 23.2627L10.3045 20.2344H26.8105C27.4509 20.2345 28.071 20.0098 28.5627 19.5996C29.0544 19.1893 29.3865 18.6195 29.5012 17.9895L31.1637 8.84844C31.1779 8.76954 31.1747 8.68847 31.1541 8.61098C31.1336 8.53349 31.0962 8.46146 31.0447 8.4ZM14.7656 27.8906C14.7656 28.3233 14.6373 28.7462 14.397 29.1059C14.1566 29.4657 13.815 29.746 13.4152 29.9116C13.0155 30.0772 12.5757 30.1205 12.1514 30.0361C11.727 29.9517 11.3373 29.7433 11.0313 29.4374C10.7254 29.1315 10.5171 28.7417 10.4327 28.3174C10.3483 27.8931 10.3916 27.4532 10.5571 27.0535C10.7227 26.6538 11.0031 26.3122 11.3628 26.0718C11.7225 25.8314 12.1455 25.7031 12.5781 25.7031C13.1583 25.7031 13.7147 25.9336 14.1249 26.3438C14.5352 26.7541 14.7656 27.3105 14.7656 27.8906ZM27.8906 27.8906C27.8906 28.3233 27.7623 28.7462 27.522 29.1059C27.2816 29.4657 26.94 29.746 26.5402 29.9116C26.1405 30.0772 25.7007 30.1205 25.2764 30.0361C24.852 29.9517 24.4623 29.7433 24.1563 29.4374C23.8504 29.1315 23.6421 28.7417 23.5577 28.3174C23.4733 27.8931 23.5166 27.4532 23.6821 27.0535C23.8477 26.6538 24.1281 26.3122 24.4878 26.0718C24.8475 25.8314 25.2705 25.7031 25.7031 25.7031C26.2833 25.7031 26.8397 25.9336 27.2499 26.3438C27.6602 26.7541 27.8906 27.3105 27.8906 27.8906ZM28.4252 17.7939C28.3564 18.172 28.157 18.5138 27.8619 18.7599C27.5669 19.006 27.1948 19.1408 26.8105 19.1406H10.1008L8.31113 9.29688H29.9701L28.4252 17.7939Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-next" style="width: 224.2px;">
+          <div class="popular__item popular-item popular-item--white">
+            <a href="https://vent2.designoffuture.ru/#" class="popular-item__theme">
+              Воздухораспределители
+            </a>
+            <div class="popular-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/02-2x.webp" media="(min-width: 1400px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/02.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/02.png" srcset="https://vent2.designoffuture.ru/img/products/02-2x.png" alt="">
+              </picture>
+            </div>
+            <span class="popular-item__title">1WA алюминиевая однорядная решетка</span>
+            <div class="popular-item__buttons">
+              <button class="popular-item__btn popular-item__btn--like btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.83333 30.625H29.1667C29.5534 30.625 29.9244 30.4714 30.1979 30.1979C30.4714 29.9244 30.625 29.5534 30.625 29.1667V5.83333C30.625 5.44656 30.4714 5.07563 30.1979 4.80214C29.9244 4.52865 29.5534 4.375 29.1667 4.375H5.83333C5.44656 4.375 5.07563 4.52865 4.80214 4.80214C4.52865 5.07563 4.375 5.44656 4.375 5.83333V29.1667C4.375 29.5534 4.52865 29.9244 4.80214 30.1979C5.07563 30.4714 5.44656 30.625 5.83333 30.625ZM11.3925 12.9894C11.765 12.6123 12.2086 12.313 12.6976 12.1087C13.1866 11.9044 13.7114 11.7992 14.2414 11.7992C14.7713 11.7992 15.2961 11.9044 15.7851 12.1087C16.2741 12.313 16.7177 12.6123 17.0902 12.9894L17.4971 13.3962L17.9025 12.9894C18.275 12.6123 18.7186 12.313 19.2076 12.1087C19.6966 11.9044 20.2214 11.7992 20.7514 11.7992C21.2813 11.7992 21.8061 11.9044 22.2951 12.1087C22.7841 12.313 23.2277 12.6123 23.6002 12.9894C23.9774 13.3617 24.2769 13.8053 24.4813 14.2944C24.6858 14.7834 24.791 15.3082 24.791 15.8382C24.791 16.3683 24.6858 16.893 24.4813 17.3821C24.2769 17.8711 23.9774 18.3147 23.6002 18.6871L17.4971 24.7917L11.391 18.6871C11.0143 18.3144 10.7152 17.8707 10.5111 17.3816C10.3071 16.8926 10.202 16.3679 10.2022 15.8379C10.2023 15.308 10.3076 14.7833 10.5119 14.2944C10.7162 13.8054 11.0155 13.3619 11.3925 12.9894Z"></path>
+                </svg>
+              </button>
+              <span class="popular-item__price">1025</span>
+              <button class="popular-item__btn popular-item__btn--cart btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.0447 8.4C30.9935 8.33844 30.9293 8.28891 30.8568 8.25489C30.7842 8.22087 30.7051 8.2032 30.625 8.20312H8.11289L7.19961 3.18281C7.1766 3.05705 7.11024 2.94332 7.01208 2.86139C6.91392 2.77947 6.79016 2.73452 6.6623 2.73438H3.28125C3.13621 2.73438 2.99711 2.79199 2.89455 2.89455C2.79199 2.99711 2.73438 3.13621 2.73438 3.28125C2.73438 3.42629 2.79199 3.56539 2.89455 3.66795C2.99711 3.77051 3.13621 3.82812 3.28125 3.82812H6.20566L7.12031 8.85938L9.77402 23.4582C9.89636 24.1254 10.2623 24.7233 10.8008 25.1357C10.2367 25.4993 9.79761 26.0272 9.54282 26.648C9.28802 27.2689 9.22974 27.953 9.37584 28.608C9.52193 29.2631 9.86538 29.8576 10.3599 30.3113C10.8543 30.7651 11.4761 31.0563 12.1412 31.1458C12.8064 31.2352 13.4829 31.1185 14.0797 30.8114C14.6765 30.5043 15.1647 30.0217 15.4786 29.4285C15.7925 28.8353 15.917 28.1601 15.8352 27.494C15.7534 26.8278 15.4694 26.2028 15.0213 25.7031H23.26C22.759 26.2632 22.4655 26.9782 22.4284 27.7287C22.3913 28.4792 22.613 29.2197 23.0562 29.8264C23.4995 30.4331 24.1376 30.8693 24.8639 31.0621C25.5901 31.2548 26.3606 31.1925 27.0464 30.8855C27.7322 30.5784 28.2919 30.0453 28.6318 29.3752C28.9718 28.7051 29.0715 27.9387 28.9142 27.2039C28.757 26.4691 28.3523 25.8106 27.7678 25.3384C27.1834 24.8661 26.4545 24.6088 25.7031 24.6094H12.4646C12.0807 24.6092 11.7089 24.4743 11.4141 24.2282C11.1193 23.9822 10.9202 23.6405 10.8514 23.2627L10.3045 20.2344H26.8105C27.4509 20.2345 28.071 20.0098 28.5627 19.5996C29.0544 19.1893 29.3865 18.6195 29.5012 17.9895L31.1637 8.84844C31.1779 8.76954 31.1747 8.68847 31.1541 8.61098C31.1336 8.53349 31.0962 8.46146 31.0447 8.4ZM14.7656 27.8906C14.7656 28.3233 14.6373 28.7462 14.397 29.1059C14.1566 29.4657 13.815 29.746 13.4152 29.9116C13.0155 30.0772 12.5757 30.1205 12.1514 30.0361C11.727 29.9517 11.3373 29.7433 11.0313 29.4374C10.7254 29.1315 10.5171 28.7417 10.4327 28.3174C10.3483 27.8931 10.3916 27.4532 10.5571 27.0535C10.7227 26.6538 11.0031 26.3122 11.3628 26.0718C11.7225 25.8314 12.1455 25.7031 12.5781 25.7031C13.1583 25.7031 13.7147 25.9336 14.1249 26.3438C14.5352 26.7541 14.7656 27.3105 14.7656 27.8906ZM27.8906 27.8906C27.8906 28.3233 27.7623 28.7462 27.522 29.1059C27.2816 29.4657 26.94 29.746 26.5402 29.9116C26.1405 30.0772 25.7007 30.1205 25.2764 30.0361C24.852 29.9517 24.4623 29.7433 24.1563 29.4374C23.8504 29.1315 23.6421 28.7417 23.5577 28.3174C23.4733 27.8931 23.5166 27.4532 23.6821 27.0535C23.8477 26.6538 24.1281 26.3122 24.4878 26.0718C24.8475 25.8314 25.2705 25.7031 25.7031 25.7031C26.2833 25.7031 26.8397 25.9336 27.2499 26.3438C27.6602 26.7541 27.8906 27.3105 27.8906 27.8906ZM28.4252 17.7939C28.3564 18.172 28.157 18.5138 27.8619 18.7599C27.5669 19.006 27.1948 19.1408 26.8105 19.1406H10.1008L8.31113 9.29688H29.9701L28.4252 17.7939Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="width: 224.2px;">
+          <div class="popular__item popular-item popular-item--light">
+            <a href="https://vent2.designoffuture.ru/#" class="popular-item__theme">
+              Регуляторы скорости
+            </a>
+            <div class="popular-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/03-2x.webp" media="(min-width: 1400px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/03.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/03.png" srcset="https://vent2.designoffuture.ru/img/products/03-2x.png" alt="">
+              </picture>
+            </div>
+            <span class="popular-item__title">MTY ON</span>
+            <div class="popular-item__buttons">
+              <button class="popular-item__btn popular-item__btn--like btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.83333 30.625H29.1667C29.5534 30.625 29.9244 30.4714 30.1979 30.1979C30.4714 29.9244 30.625 29.5534 30.625 29.1667V5.83333C30.625 5.44656 30.4714 5.07563 30.1979 4.80214C29.9244 4.52865 29.5534 4.375 29.1667 4.375H5.83333C5.44656 4.375 5.07563 4.52865 4.80214 4.80214C4.52865 5.07563 4.375 5.44656 4.375 5.83333V29.1667C4.375 29.5534 4.52865 29.9244 4.80214 30.1979C5.07563 30.4714 5.44656 30.625 5.83333 30.625ZM11.3925 12.9894C11.765 12.6123 12.2086 12.313 12.6976 12.1087C13.1866 11.9044 13.7114 11.7992 14.2414 11.7992C14.7713 11.7992 15.2961 11.9044 15.7851 12.1087C16.2741 12.313 16.7177 12.6123 17.0902 12.9894L17.4971 13.3962L17.9025 12.9894C18.275 12.6123 18.7186 12.313 19.2076 12.1087C19.6966 11.9044 20.2214 11.7992 20.7514 11.7992C21.2813 11.7992 21.8061 11.9044 22.2951 12.1087C22.7841 12.313 23.2277 12.6123 23.6002 12.9894C23.9774 13.3617 24.2769 13.8053 24.4813 14.2944C24.6858 14.7834 24.791 15.3082 24.791 15.8382C24.791 16.3683 24.6858 16.893 24.4813 17.3821C24.2769 17.8711 23.9774 18.3147 23.6002 18.6871L17.4971 24.7917L11.391 18.6871C11.0143 18.3144 10.7152 17.8707 10.5111 17.3816C10.3071 16.8926 10.202 16.3679 10.2022 15.8379C10.2023 15.308 10.3076 14.7833 10.5119 14.2944C10.7162 13.8054 11.0155 13.3619 11.3925 12.9894Z"></path>
+                </svg>
+              </button>
+              <span class="popular-item__price">3490</span>
+              <button class="popular-item__btn popular-item__btn--cart btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.0447 8.4C30.9935 8.33844 30.9293 8.28891 30.8568 8.25489C30.7842 8.22087 30.7051 8.2032 30.625 8.20312H8.11289L7.19961 3.18281C7.1766 3.05705 7.11024 2.94332 7.01208 2.86139C6.91392 2.77947 6.79016 2.73452 6.6623 2.73438H3.28125C3.13621 2.73438 2.99711 2.79199 2.89455 2.89455C2.79199 2.99711 2.73438 3.13621 2.73438 3.28125C2.73438 3.42629 2.79199 3.56539 2.89455 3.66795C2.99711 3.77051 3.13621 3.82812 3.28125 3.82812H6.20566L7.12031 8.85938L9.77402 23.4582C9.89636 24.1254 10.2623 24.7233 10.8008 25.1357C10.2367 25.4993 9.79761 26.0272 9.54282 26.648C9.28802 27.2689 9.22974 27.953 9.37584 28.608C9.52193 29.2631 9.86538 29.8576 10.3599 30.3113C10.8543 30.7651 11.4761 31.0563 12.1412 31.1458C12.8064 31.2352 13.4829 31.1185 14.0797 30.8114C14.6765 30.5043 15.1647 30.0217 15.4786 29.4285C15.7925 28.8353 15.917 28.1601 15.8352 27.494C15.7534 26.8278 15.4694 26.2028 15.0213 25.7031H23.26C22.759 26.2632 22.4655 26.9782 22.4284 27.7287C22.3913 28.4792 22.613 29.2197 23.0562 29.8264C23.4995 30.4331 24.1376 30.8693 24.8639 31.0621C25.5901 31.2548 26.3606 31.1925 27.0464 30.8855C27.7322 30.5784 28.2919 30.0453 28.6318 29.3752C28.9718 28.7051 29.0715 27.9387 28.9142 27.2039C28.757 26.4691 28.3523 25.8106 27.7678 25.3384C27.1834 24.8661 26.4545 24.6088 25.7031 24.6094H12.4646C12.0807 24.6092 11.7089 24.4743 11.4141 24.2282C11.1193 23.9822 10.9202 23.6405 10.8514 23.2627L10.3045 20.2344H26.8105C27.4509 20.2345 28.071 20.0098 28.5627 19.5996C29.0544 19.1893 29.3865 18.6195 29.5012 17.9895L31.1637 8.84844C31.1779 8.76954 31.1747 8.68847 31.1541 8.61098C31.1336 8.53349 31.0962 8.46146 31.0447 8.4ZM14.7656 27.8906C14.7656 28.3233 14.6373 28.7462 14.397 29.1059C14.1566 29.4657 13.815 29.746 13.4152 29.9116C13.0155 30.0772 12.5757 30.1205 12.1514 30.0361C11.727 29.9517 11.3373 29.7433 11.0313 29.4374C10.7254 29.1315 10.5171 28.7417 10.4327 28.3174C10.3483 27.8931 10.3916 27.4532 10.5571 27.0535C10.7227 26.6538 11.0031 26.3122 11.3628 26.0718C11.7225 25.8314 12.1455 25.7031 12.5781 25.7031C13.1583 25.7031 13.7147 25.9336 14.1249 26.3438C14.5352 26.7541 14.7656 27.3105 14.7656 27.8906ZM27.8906 27.8906C27.8906 28.3233 27.7623 28.7462 27.522 29.1059C27.2816 29.4657 26.94 29.746 26.5402 29.9116C26.1405 30.0772 25.7007 30.1205 25.2764 30.0361C24.852 29.9517 24.4623 29.7433 24.1563 29.4374C23.8504 29.1315 23.6421 28.7417 23.5577 28.3174C23.4733 27.8931 23.5166 27.4532 23.6821 27.0535C23.8477 26.6538 24.1281 26.3122 24.4878 26.0718C24.8475 25.8314 25.2705 25.7031 25.7031 25.7031C26.2833 25.7031 26.8397 25.9336 27.2499 26.3438C27.6602 26.7541 27.8906 27.3105 27.8906 27.8906ZM28.4252 17.7939C28.3564 18.172 28.157 18.5138 27.8619 18.7599C27.5669 19.006 27.1948 19.1408 26.8105 19.1406H10.1008L8.31113 9.29688H29.9701L28.4252 17.7939Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="width: 224.2px;">
+          <div class="popular__item popular-item popular-item--white">
+            <a href="https://vent2.designoffuture.ru/#" class="popular-item__theme">
+              Регуляторы скорости
+            </a>
+            <div class="popular-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/04-2x.webp" media="(min-width: 1400px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/04.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/04.png" srcset="https://vent2.designoffuture.ru/img/products/04-2x.png" alt="">
+              </picture>
+            </div>
+            <span class="popular-item__title">MTY ON</span>
+            <div class="popular-item__buttons">
+              <button class="popular-item__btn popular-item__btn--like btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.83333 30.625H29.1667C29.5534 30.625 29.9244 30.4714 30.1979 30.1979C30.4714 29.9244 30.625 29.5534 30.625 29.1667V5.83333C30.625 5.44656 30.4714 5.07563 30.1979 4.80214C29.9244 4.52865 29.5534 4.375 29.1667 4.375H5.83333C5.44656 4.375 5.07563 4.52865 4.80214 4.80214C4.52865 5.07563 4.375 5.44656 4.375 5.83333V29.1667C4.375 29.5534 4.52865 29.9244 4.80214 30.1979C5.07563 30.4714 5.44656 30.625 5.83333 30.625ZM11.3925 12.9894C11.765 12.6123 12.2086 12.313 12.6976 12.1087C13.1866 11.9044 13.7114 11.7992 14.2414 11.7992C14.7713 11.7992 15.2961 11.9044 15.7851 12.1087C16.2741 12.313 16.7177 12.6123 17.0902 12.9894L17.4971 13.3962L17.9025 12.9894C18.275 12.6123 18.7186 12.313 19.2076 12.1087C19.6966 11.9044 20.2214 11.7992 20.7514 11.7992C21.2813 11.7992 21.8061 11.9044 22.2951 12.1087C22.7841 12.313 23.2277 12.6123 23.6002 12.9894C23.9774 13.3617 24.2769 13.8053 24.4813 14.2944C24.6858 14.7834 24.791 15.3082 24.791 15.8382C24.791 16.3683 24.6858 16.893 24.4813 17.3821C24.2769 17.8711 23.9774 18.3147 23.6002 18.6871L17.4971 24.7917L11.391 18.6871C11.0143 18.3144 10.7152 17.8707 10.5111 17.3816C10.3071 16.8926 10.202 16.3679 10.2022 15.8379C10.2023 15.308 10.3076 14.7833 10.5119 14.2944C10.7162 13.8054 11.0155 13.3619 11.3925 12.9894Z"></path>
+                </svg>
+              </button>
+              <span class="popular-item__price">21 440</span>
+              <button class="popular-item__btn popular-item__btn--cart btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.0447 8.4C30.9935 8.33844 30.9293 8.28891 30.8568 8.25489C30.7842 8.22087 30.7051 8.2032 30.625 8.20312H8.11289L7.19961 3.18281C7.1766 3.05705 7.11024 2.94332 7.01208 2.86139C6.91392 2.77947 6.79016 2.73452 6.6623 2.73438H3.28125C3.13621 2.73438 2.99711 2.79199 2.89455 2.89455C2.79199 2.99711 2.73438 3.13621 2.73438 3.28125C2.73438 3.42629 2.79199 3.56539 2.89455 3.66795C2.99711 3.77051 3.13621 3.82812 3.28125 3.82812H6.20566L7.12031 8.85938L9.77402 23.4582C9.89636 24.1254 10.2623 24.7233 10.8008 25.1357C10.2367 25.4993 9.79761 26.0272 9.54282 26.648C9.28802 27.2689 9.22974 27.953 9.37584 28.608C9.52193 29.2631 9.86538 29.8576 10.3599 30.3113C10.8543 30.7651 11.4761 31.0563 12.1412 31.1458C12.8064 31.2352 13.4829 31.1185 14.0797 30.8114C14.6765 30.5043 15.1647 30.0217 15.4786 29.4285C15.7925 28.8353 15.917 28.1601 15.8352 27.494C15.7534 26.8278 15.4694 26.2028 15.0213 25.7031H23.26C22.759 26.2632 22.4655 26.9782 22.4284 27.7287C22.3913 28.4792 22.613 29.2197 23.0562 29.8264C23.4995 30.4331 24.1376 30.8693 24.8639 31.0621C25.5901 31.2548 26.3606 31.1925 27.0464 30.8855C27.7322 30.5784 28.2919 30.0453 28.6318 29.3752C28.9718 28.7051 29.0715 27.9387 28.9142 27.2039C28.757 26.4691 28.3523 25.8106 27.7678 25.3384C27.1834 24.8661 26.4545 24.6088 25.7031 24.6094H12.4646C12.0807 24.6092 11.7089 24.4743 11.4141 24.2282C11.1193 23.9822 10.9202 23.6405 10.8514 23.2627L10.3045 20.2344H26.8105C27.4509 20.2345 28.071 20.0098 28.5627 19.5996C29.0544 19.1893 29.3865 18.6195 29.5012 17.9895L31.1637 8.84844C31.1779 8.76954 31.1747 8.68847 31.1541 8.61098C31.1336 8.53349 31.0962 8.46146 31.0447 8.4ZM14.7656 27.8906C14.7656 28.3233 14.6373 28.7462 14.397 29.1059C14.1566 29.4657 13.815 29.746 13.4152 29.9116C13.0155 30.0772 12.5757 30.1205 12.1514 30.0361C11.727 29.9517 11.3373 29.7433 11.0313 29.4374C10.7254 29.1315 10.5171 28.7417 10.4327 28.3174C10.3483 27.8931 10.3916 27.4532 10.5571 27.0535C10.7227 26.6538 11.0031 26.3122 11.3628 26.0718C11.7225 25.8314 12.1455 25.7031 12.5781 25.7031C13.1583 25.7031 13.7147 25.9336 14.1249 26.3438C14.5352 26.7541 14.7656 27.3105 14.7656 27.8906ZM27.8906 27.8906C27.8906 28.3233 27.7623 28.7462 27.522 29.1059C27.2816 29.4657 26.94 29.746 26.5402 29.9116C26.1405 30.0772 25.7007 30.1205 25.2764 30.0361C24.852 29.9517 24.4623 29.7433 24.1563 29.4374C23.8504 29.1315 23.6421 28.7417 23.5577 28.3174C23.4733 27.8931 23.5166 27.4532 23.6821 27.0535C23.8477 26.6538 24.1281 26.3122 24.4878 26.0718C24.8475 25.8314 25.2705 25.7031 25.7031 25.7031C26.2833 25.7031 26.8397 25.9336 27.2499 26.3438C27.6602 26.7541 27.8906 27.3105 27.8906 27.8906ZM28.4252 17.7939C28.3564 18.172 28.157 18.5138 27.8619 18.7599C27.5669 19.006 27.1948 19.1408 26.8105 19.1406H10.1008L8.31113 9.29688H29.9701L28.4252 17.7939Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="width: 224.2px;">
+          <div class="popular__item popular-item popular-item--light">
+            <a href="https://vent2.designoffuture.ru/#" class="popular-item__theme">
+              Воздухораспределители
+            </a>
+            <div class="popular-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/06-2x.webp" media="(min-width: 1400px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/06.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/06.png" srcset="https://vent2.designoffuture.ru/img/products/06-2x.png" alt="">
+              </picture>
+            </div>
+            <span class="popular-item__title">Алюминиевый диффузор</span>
+            <div class="popular-item__buttons">
+              <button class="popular-item__btn popular-item__btn--like btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.83333 30.625H29.1667C29.5534 30.625 29.9244 30.4714 30.1979 30.1979C30.4714 29.9244 30.625 29.5534 30.625 29.1667V5.83333C30.625 5.44656 30.4714 5.07563 30.1979 4.80214C29.9244 4.52865 29.5534 4.375 29.1667 4.375H5.83333C5.44656 4.375 5.07563 4.52865 4.80214 4.80214C4.52865 5.07563 4.375 5.44656 4.375 5.83333V29.1667C4.375 29.5534 4.52865 29.9244 4.80214 30.1979C5.07563 30.4714 5.44656 30.625 5.83333 30.625ZM11.3925 12.9894C11.765 12.6123 12.2086 12.313 12.6976 12.1087C13.1866 11.9044 13.7114 11.7992 14.2414 11.7992C14.7713 11.7992 15.2961 11.9044 15.7851 12.1087C16.2741 12.313 16.7177 12.6123 17.0902 12.9894L17.4971 13.3962L17.9025 12.9894C18.275 12.6123 18.7186 12.313 19.2076 12.1087C19.6966 11.9044 20.2214 11.7992 20.7514 11.7992C21.2813 11.7992 21.8061 11.9044 22.2951 12.1087C22.7841 12.313 23.2277 12.6123 23.6002 12.9894C23.9774 13.3617 24.2769 13.8053 24.4813 14.2944C24.6858 14.7834 24.791 15.3082 24.791 15.8382C24.791 16.3683 24.6858 16.893 24.4813 17.3821C24.2769 17.8711 23.9774 18.3147 23.6002 18.6871L17.4971 24.7917L11.391 18.6871C11.0143 18.3144 10.7152 17.8707 10.5111 17.3816C10.3071 16.8926 10.202 16.3679 10.2022 15.8379C10.2023 15.308 10.3076 14.7833 10.5119 14.2944C10.7162 13.8054 11.0155 13.3619 11.3925 12.9894Z"></path>
+                </svg>
+              </button>
+              <span class="popular-item__price">1050</span>
+              <button class="popular-item__btn popular-item__btn--cart btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.0447 8.4C30.9935 8.33844 30.9293 8.28891 30.8568 8.25489C30.7842 8.22087 30.7051 8.2032 30.625 8.20312H8.11289L7.19961 3.18281C7.1766 3.05705 7.11024 2.94332 7.01208 2.86139C6.91392 2.77947 6.79016 2.73452 6.6623 2.73438H3.28125C3.13621 2.73438 2.99711 2.79199 2.89455 2.89455C2.79199 2.99711 2.73438 3.13621 2.73438 3.28125C2.73438 3.42629 2.79199 3.56539 2.89455 3.66795C2.99711 3.77051 3.13621 3.82812 3.28125 3.82812H6.20566L7.12031 8.85938L9.77402 23.4582C9.89636 24.1254 10.2623 24.7233 10.8008 25.1357C10.2367 25.4993 9.79761 26.0272 9.54282 26.648C9.28802 27.2689 9.22974 27.953 9.37584 28.608C9.52193 29.2631 9.86538 29.8576 10.3599 30.3113C10.8543 30.7651 11.4761 31.0563 12.1412 31.1458C12.8064 31.2352 13.4829 31.1185 14.0797 30.8114C14.6765 30.5043 15.1647 30.0217 15.4786 29.4285C15.7925 28.8353 15.917 28.1601 15.8352 27.494C15.7534 26.8278 15.4694 26.2028 15.0213 25.7031H23.26C22.759 26.2632 22.4655 26.9782 22.4284 27.7287C22.3913 28.4792 22.613 29.2197 23.0562 29.8264C23.4995 30.4331 24.1376 30.8693 24.8639 31.0621C25.5901 31.2548 26.3606 31.1925 27.0464 30.8855C27.7322 30.5784 28.2919 30.0453 28.6318 29.3752C28.9718 28.7051 29.0715 27.9387 28.9142 27.2039C28.757 26.4691 28.3523 25.8106 27.7678 25.3384C27.1834 24.8661 26.4545 24.6088 25.7031 24.6094H12.4646C12.0807 24.6092 11.7089 24.4743 11.4141 24.2282C11.1193 23.9822 10.9202 23.6405 10.8514 23.2627L10.3045 20.2344H26.8105C27.4509 20.2345 28.071 20.0098 28.5627 19.5996C29.0544 19.1893 29.3865 18.6195 29.5012 17.9895L31.1637 8.84844C31.1779 8.76954 31.1747 8.68847 31.1541 8.61098C31.1336 8.53349 31.0962 8.46146 31.0447 8.4ZM14.7656 27.8906C14.7656 28.3233 14.6373 28.7462 14.397 29.1059C14.1566 29.4657 13.815 29.746 13.4152 29.9116C13.0155 30.0772 12.5757 30.1205 12.1514 30.0361C11.727 29.9517 11.3373 29.7433 11.0313 29.4374C10.7254 29.1315 10.5171 28.7417 10.4327 28.3174C10.3483 27.8931 10.3916 27.4532 10.5571 27.0535C10.7227 26.6538 11.0031 26.3122 11.3628 26.0718C11.7225 25.8314 12.1455 25.7031 12.5781 25.7031C13.1583 25.7031 13.7147 25.9336 14.1249 26.3438C14.5352 26.7541 14.7656 27.3105 14.7656 27.8906ZM27.8906 27.8906C27.8906 28.3233 27.7623 28.7462 27.522 29.1059C27.2816 29.4657 26.94 29.746 26.5402 29.9116C26.1405 30.0772 25.7007 30.1205 25.2764 30.0361C24.852 29.9517 24.4623 29.7433 24.1563 29.4374C23.8504 29.1315 23.6421 28.7417 23.5577 28.3174C23.4733 27.8931 23.5166 27.4532 23.6821 27.0535C23.8477 26.6538 24.1281 26.3122 24.4878 26.0718C24.8475 25.8314 25.2705 25.7031 25.7031 25.7031C26.2833 25.7031 26.8397 25.9336 27.2499 26.3438C27.6602 26.7541 27.8906 27.3105 27.8906 27.8906ZM28.4252 17.7939C28.3564 18.172 28.157 18.5138 27.8619 18.7599C27.5669 19.006 27.1948 19.1408 26.8105 19.1406H10.1008L8.31113 9.29688H29.9701L28.4252 17.7939Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="width: 224.2px;">
+          <div class="popular__item popular-item popular-item--white">
+            <a href="https://vent2.designoffuture.ru/#" class="popular-item__theme">
+              Теплоизоляционные материалы
+            </a>
+            <div class="popular-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/05-2x.webp" media="(min-width: 1400px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/05.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/05.png" srcset="https://vent2.designoffuture.ru/img/products/05-2x.png" alt="">
+              </picture>
+            </div>
+            <span class="popular-item__title">РУЛОНЫ ТИЛИТ Блэк Стар Дакт</span>
+            <div class="popular-item__buttons">
+              <button class="popular-item__btn popular-item__btn--like btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.83333 30.625H29.1667C29.5534 30.625 29.9244 30.4714 30.1979 30.1979C30.4714 29.9244 30.625 29.5534 30.625 29.1667V5.83333C30.625 5.44656 30.4714 5.07563 30.1979 4.80214C29.9244 4.52865 29.5534 4.375 29.1667 4.375H5.83333C5.44656 4.375 5.07563 4.52865 4.80214 4.80214C4.52865 5.07563 4.375 5.44656 4.375 5.83333V29.1667C4.375 29.5534 4.52865 29.9244 4.80214 30.1979C5.07563 30.4714 5.44656 30.625 5.83333 30.625ZM11.3925 12.9894C11.765 12.6123 12.2086 12.313 12.6976 12.1087C13.1866 11.9044 13.7114 11.7992 14.2414 11.7992C14.7713 11.7992 15.2961 11.9044 15.7851 12.1087C16.2741 12.313 16.7177 12.6123 17.0902 12.9894L17.4971 13.3962L17.9025 12.9894C18.275 12.6123 18.7186 12.313 19.2076 12.1087C19.6966 11.9044 20.2214 11.7992 20.7514 11.7992C21.2813 11.7992 21.8061 11.9044 22.2951 12.1087C22.7841 12.313 23.2277 12.6123 23.6002 12.9894C23.9774 13.3617 24.2769 13.8053 24.4813 14.2944C24.6858 14.7834 24.791 15.3082 24.791 15.8382C24.791 16.3683 24.6858 16.893 24.4813 17.3821C24.2769 17.8711 23.9774 18.3147 23.6002 18.6871L17.4971 24.7917L11.391 18.6871C11.0143 18.3144 10.7152 17.8707 10.5111 17.3816C10.3071 16.8926 10.202 16.3679 10.2022 15.8379C10.2023 15.308 10.3076 14.7833 10.5119 14.2944C10.7162 13.8054 11.0155 13.3619 11.3925 12.9894Z"></path>
+                </svg>
+              </button>
+              <span class="popular-item__price">300&nbsp;м<sup>2</sup></span>
+              <button class="popular-item__btn popular-item__btn--cart btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.0447 8.4C30.9935 8.33844 30.9293 8.28891 30.8568 8.25489C30.7842 8.22087 30.7051 8.2032 30.625 8.20312H8.11289L7.19961 3.18281C7.1766 3.05705 7.11024 2.94332 7.01208 2.86139C6.91392 2.77947 6.79016 2.73452 6.6623 2.73438H3.28125C3.13621 2.73438 2.99711 2.79199 2.89455 2.89455C2.79199 2.99711 2.73438 3.13621 2.73438 3.28125C2.73438 3.42629 2.79199 3.56539 2.89455 3.66795C2.99711 3.77051 3.13621 3.82812 3.28125 3.82812H6.20566L7.12031 8.85938L9.77402 23.4582C9.89636 24.1254 10.2623 24.7233 10.8008 25.1357C10.2367 25.4993 9.79761 26.0272 9.54282 26.648C9.28802 27.2689 9.22974 27.953 9.37584 28.608C9.52193 29.2631 9.86538 29.8576 10.3599 30.3113C10.8543 30.7651 11.4761 31.0563 12.1412 31.1458C12.8064 31.2352 13.4829 31.1185 14.0797 30.8114C14.6765 30.5043 15.1647 30.0217 15.4786 29.4285C15.7925 28.8353 15.917 28.1601 15.8352 27.494C15.7534 26.8278 15.4694 26.2028 15.0213 25.7031H23.26C22.759 26.2632 22.4655 26.9782 22.4284 27.7287C22.3913 28.4792 22.613 29.2197 23.0562 29.8264C23.4995 30.4331 24.1376 30.8693 24.8639 31.0621C25.5901 31.2548 26.3606 31.1925 27.0464 30.8855C27.7322 30.5784 28.2919 30.0453 28.6318 29.3752C28.9718 28.7051 29.0715 27.9387 28.9142 27.2039C28.757 26.4691 28.3523 25.8106 27.7678 25.3384C27.1834 24.8661 26.4545 24.6088 25.7031 24.6094H12.4646C12.0807 24.6092 11.7089 24.4743 11.4141 24.2282C11.1193 23.9822 10.9202 23.6405 10.8514 23.2627L10.3045 20.2344H26.8105C27.4509 20.2345 28.071 20.0098 28.5627 19.5996C29.0544 19.1893 29.3865 18.6195 29.5012 17.9895L31.1637 8.84844C31.1779 8.76954 31.1747 8.68847 31.1541 8.61098C31.1336 8.53349 31.0962 8.46146 31.0447 8.4ZM14.7656 27.8906C14.7656 28.3233 14.6373 28.7462 14.397 29.1059C14.1566 29.4657 13.815 29.746 13.4152 29.9116C13.0155 30.0772 12.5757 30.1205 12.1514 30.0361C11.727 29.9517 11.3373 29.7433 11.0313 29.4374C10.7254 29.1315 10.5171 28.7417 10.4327 28.3174C10.3483 27.8931 10.3916 27.4532 10.5571 27.0535C10.7227 26.6538 11.0031 26.3122 11.3628 26.0718C11.7225 25.8314 12.1455 25.7031 12.5781 25.7031C13.1583 25.7031 13.7147 25.9336 14.1249 26.3438C14.5352 26.7541 14.7656 27.3105 14.7656 27.8906ZM27.8906 27.8906C27.8906 28.3233 27.7623 28.7462 27.522 29.1059C27.2816 29.4657 26.94 29.746 26.5402 29.9116C26.1405 30.0772 25.7007 30.1205 25.2764 30.0361C24.852 29.9517 24.4623 29.7433 24.1563 29.4374C23.8504 29.1315 23.6421 28.7417 23.5577 28.3174C23.4733 27.8931 23.5166 27.4532 23.6821 27.0535C23.8477 26.6538 24.1281 26.3122 24.4878 26.0718C24.8475 25.8314 25.2705 25.7031 25.7031 25.7031C26.2833 25.7031 26.8397 25.9336 27.2499 26.3438C27.6602 26.7541 27.8906 27.3105 27.8906 27.8906ZM28.4252 17.7939C28.3564 18.172 28.157 18.5138 27.8619 18.7599C27.5669 19.006 27.1948 19.1408 26.8105 19.1406H10.1008L8.31113 9.29688H29.9701L28.4252 17.7939Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="width: 224.2px;">
+          <div class="popular__item popular-item popular-item--light">
+            <a href="https://vent2.designoffuture.ru/#" class="popular-item__theme">
+              Воздухораспределители
+            </a>
+            <div class="popular-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/06-2x.webp" media="(min-width: 1400px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/06.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/06.png" srcset="https://vent2.designoffuture.ru/img/products/06-2x.png" alt="">
+              </picture>
+            </div>
+            <span class="popular-item__title">Алюминиевый диффузор</span>
+            <div class="popular-item__buttons">
+              <button class="popular-item__btn popular-item__btn--like btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.83333 30.625H29.1667C29.5534 30.625 29.9244 30.4714 30.1979 30.1979C30.4714 29.9244 30.625 29.5534 30.625 29.1667V5.83333C30.625 5.44656 30.4714 5.07563 30.1979 4.80214C29.9244 4.52865 29.5534 4.375 29.1667 4.375H5.83333C5.44656 4.375 5.07563 4.52865 4.80214 4.80214C4.52865 5.07563 4.375 5.44656 4.375 5.83333V29.1667C4.375 29.5534 4.52865 29.9244 4.80214 30.1979C5.07563 30.4714 5.44656 30.625 5.83333 30.625ZM11.3925 12.9894C11.765 12.6123 12.2086 12.313 12.6976 12.1087C13.1866 11.9044 13.7114 11.7992 14.2414 11.7992C14.7713 11.7992 15.2961 11.9044 15.7851 12.1087C16.2741 12.313 16.7177 12.6123 17.0902 12.9894L17.4971 13.3962L17.9025 12.9894C18.275 12.6123 18.7186 12.313 19.2076 12.1087C19.6966 11.9044 20.2214 11.7992 20.7514 11.7992C21.2813 11.7992 21.8061 11.9044 22.2951 12.1087C22.7841 12.313 23.2277 12.6123 23.6002 12.9894C23.9774 13.3617 24.2769 13.8053 24.4813 14.2944C24.6858 14.7834 24.791 15.3082 24.791 15.8382C24.791 16.3683 24.6858 16.893 24.4813 17.3821C24.2769 17.8711 23.9774 18.3147 23.6002 18.6871L17.4971 24.7917L11.391 18.6871C11.0143 18.3144 10.7152 17.8707 10.5111 17.3816C10.3071 16.8926 10.202 16.3679 10.2022 15.8379C10.2023 15.308 10.3076 14.7833 10.5119 14.2944C10.7162 13.8054 11.0155 13.3619 11.3925 12.9894Z"></path>
+                </svg>
+              </button>
+              <span class="popular-item__price">1050</span>
+              <button class="popular-item__btn popular-item__btn--cart btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.0447 8.4C30.9935 8.33844 30.9293 8.28891 30.8568 8.25489C30.7842 8.22087 30.7051 8.2032 30.625 8.20312H8.11289L7.19961 3.18281C7.1766 3.05705 7.11024 2.94332 7.01208 2.86139C6.91392 2.77947 6.79016 2.73452 6.6623 2.73438H3.28125C3.13621 2.73438 2.99711 2.79199 2.89455 2.89455C2.79199 2.99711 2.73438 3.13621 2.73438 3.28125C2.73438 3.42629 2.79199 3.56539 2.89455 3.66795C2.99711 3.77051 3.13621 3.82812 3.28125 3.82812H6.20566L7.12031 8.85938L9.77402 23.4582C9.89636 24.1254 10.2623 24.7233 10.8008 25.1357C10.2367 25.4993 9.79761 26.0272 9.54282 26.648C9.28802 27.2689 9.22974 27.953 9.37584 28.608C9.52193 29.2631 9.86538 29.8576 10.3599 30.3113C10.8543 30.7651 11.4761 31.0563 12.1412 31.1458C12.8064 31.2352 13.4829 31.1185 14.0797 30.8114C14.6765 30.5043 15.1647 30.0217 15.4786 29.4285C15.7925 28.8353 15.917 28.1601 15.8352 27.494C15.7534 26.8278 15.4694 26.2028 15.0213 25.7031H23.26C22.759 26.2632 22.4655 26.9782 22.4284 27.7287C22.3913 28.4792 22.613 29.2197 23.0562 29.8264C23.4995 30.4331 24.1376 30.8693 24.8639 31.0621C25.5901 31.2548 26.3606 31.1925 27.0464 30.8855C27.7322 30.5784 28.2919 30.0453 28.6318 29.3752C28.9718 28.7051 29.0715 27.9387 28.9142 27.2039C28.757 26.4691 28.3523 25.8106 27.7678 25.3384C27.1834 24.8661 26.4545 24.6088 25.7031 24.6094H12.4646C12.0807 24.6092 11.7089 24.4743 11.4141 24.2282C11.1193 23.9822 10.9202 23.6405 10.8514 23.2627L10.3045 20.2344H26.8105C27.4509 20.2345 28.071 20.0098 28.5627 19.5996C29.0544 19.1893 29.3865 18.6195 29.5012 17.9895L31.1637 8.84844C31.1779 8.76954 31.1747 8.68847 31.1541 8.61098C31.1336 8.53349 31.0962 8.46146 31.0447 8.4ZM14.7656 27.8906C14.7656 28.3233 14.6373 28.7462 14.397 29.1059C14.1566 29.4657 13.815 29.746 13.4152 29.9116C13.0155 30.0772 12.5757 30.1205 12.1514 30.0361C11.727 29.9517 11.3373 29.7433 11.0313 29.4374C10.7254 29.1315 10.5171 28.7417 10.4327 28.3174C10.3483 27.8931 10.3916 27.4532 10.5571 27.0535C10.7227 26.6538 11.0031 26.3122 11.3628 26.0718C11.7225 25.8314 12.1455 25.7031 12.5781 25.7031C13.1583 25.7031 13.7147 25.9336 14.1249 26.3438C14.5352 26.7541 14.7656 27.3105 14.7656 27.8906ZM27.8906 27.8906C27.8906 28.3233 27.7623 28.7462 27.522 29.1059C27.2816 29.4657 26.94 29.746 26.5402 29.9116C26.1405 30.0772 25.7007 30.1205 25.2764 30.0361C24.852 29.9517 24.4623 29.7433 24.1563 29.4374C23.8504 29.1315 23.6421 28.7417 23.5577 28.3174C23.4733 27.8931 23.5166 27.4532 23.6821 27.0535C23.8477 26.6538 24.1281 26.3122 24.4878 26.0718C24.8475 25.8314 25.2705 25.7031 25.7031 25.7031C26.2833 25.7031 26.8397 25.9336 27.2499 26.3438C27.6602 26.7541 27.8906 27.3105 27.8906 27.8906ZM28.4252 17.7939C28.3564 18.172 28.157 18.5138 27.8619 18.7599C27.5669 19.006 27.1948 19.1408 26.8105 19.1406H10.1008L8.31113 9.29688H29.9701L28.4252 17.7939Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="width: 224.2px;">
+          <div class="popular__item popular-item popular-item--white">
+            <a href="https://vent2.designoffuture.ru/#" class="popular-item__theme">
+              Теплоизоляционные материалы
+            </a>
+            <div class="popular-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/05-2x.webp" media="(min-width: 1400px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/05.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/05.png" srcset="https://vent2.designoffuture.ru/img/products/05-2x.png" alt="">
+              </picture>
+            </div>
+            <span class="popular-item__title">РУЛОНЫ ТИЛИТ Блэк Стар Дакт</span>
+            <div class="popular-item__buttons">
+              <button class="popular-item__btn popular-item__btn--like btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.83333 30.625H29.1667C29.5534 30.625 29.9244 30.4714 30.1979 30.1979C30.4714 29.9244 30.625 29.5534 30.625 29.1667V5.83333C30.625 5.44656 30.4714 5.07563 30.1979 4.80214C29.9244 4.52865 29.5534 4.375 29.1667 4.375H5.83333C5.44656 4.375 5.07563 4.52865 4.80214 4.80214C4.52865 5.07563 4.375 5.44656 4.375 5.83333V29.1667C4.375 29.5534 4.52865 29.9244 4.80214 30.1979C5.07563 30.4714 5.44656 30.625 5.83333 30.625ZM11.3925 12.9894C11.765 12.6123 12.2086 12.313 12.6976 12.1087C13.1866 11.9044 13.7114 11.7992 14.2414 11.7992C14.7713 11.7992 15.2961 11.9044 15.7851 12.1087C16.2741 12.313 16.7177 12.6123 17.0902 12.9894L17.4971 13.3962L17.9025 12.9894C18.275 12.6123 18.7186 12.313 19.2076 12.1087C19.6966 11.9044 20.2214 11.7992 20.7514 11.7992C21.2813 11.7992 21.8061 11.9044 22.2951 12.1087C22.7841 12.313 23.2277 12.6123 23.6002 12.9894C23.9774 13.3617 24.2769 13.8053 24.4813 14.2944C24.6858 14.7834 24.791 15.3082 24.791 15.8382C24.791 16.3683 24.6858 16.893 24.4813 17.3821C24.2769 17.8711 23.9774 18.3147 23.6002 18.6871L17.4971 24.7917L11.391 18.6871C11.0143 18.3144 10.7152 17.8707 10.5111 17.3816C10.3071 16.8926 10.202 16.3679 10.2022 15.8379C10.2023 15.308 10.3076 14.7833 10.5119 14.2944C10.7162 13.8054 11.0155 13.3619 11.3925 12.9894Z"></path>
+                </svg>
+              </button>
+              <span class="popular-item__price">300&nbsp;м<sup>2</sup></span>
+              <button class="popular-item__btn popular-item__btn--cart btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.0447 8.4C30.9935 8.33844 30.9293 8.28891 30.8568 8.25489C30.7842 8.22087 30.7051 8.2032 30.625 8.20312H8.11289L7.19961 3.18281C7.1766 3.05705 7.11024 2.94332 7.01208 2.86139C6.91392 2.77947 6.79016 2.73452 6.6623 2.73438H3.28125C3.13621 2.73438 2.99711 2.79199 2.89455 2.89455C2.79199 2.99711 2.73438 3.13621 2.73438 3.28125C2.73438 3.42629 2.79199 3.56539 2.89455 3.66795C2.99711 3.77051 3.13621 3.82812 3.28125 3.82812H6.20566L7.12031 8.85938L9.77402 23.4582C9.89636 24.1254 10.2623 24.7233 10.8008 25.1357C10.2367 25.4993 9.79761 26.0272 9.54282 26.648C9.28802 27.2689 9.22974 27.953 9.37584 28.608C9.52193 29.2631 9.86538 29.8576 10.3599 30.3113C10.8543 30.7651 11.4761 31.0563 12.1412 31.1458C12.8064 31.2352 13.4829 31.1185 14.0797 30.8114C14.6765 30.5043 15.1647 30.0217 15.4786 29.4285C15.7925 28.8353 15.917 28.1601 15.8352 27.494C15.7534 26.8278 15.4694 26.2028 15.0213 25.7031H23.26C22.759 26.2632 22.4655 26.9782 22.4284 27.7287C22.3913 28.4792 22.613 29.2197 23.0562 29.8264C23.4995 30.4331 24.1376 30.8693 24.8639 31.0621C25.5901 31.2548 26.3606 31.1925 27.0464 30.8855C27.7322 30.5784 28.2919 30.0453 28.6318 29.3752C28.9718 28.7051 29.0715 27.9387 28.9142 27.2039C28.757 26.4691 28.3523 25.8106 27.7678 25.3384C27.1834 24.8661 26.4545 24.6088 25.7031 24.6094H12.4646C12.0807 24.6092 11.7089 24.4743 11.4141 24.2282C11.1193 23.9822 10.9202 23.6405 10.8514 23.2627L10.3045 20.2344H26.8105C27.4509 20.2345 28.071 20.0098 28.5627 19.5996C29.0544 19.1893 29.3865 18.6195 29.5012 17.9895L31.1637 8.84844C31.1779 8.76954 31.1747 8.68847 31.1541 8.61098C31.1336 8.53349 31.0962 8.46146 31.0447 8.4ZM14.7656 27.8906C14.7656 28.3233 14.6373 28.7462 14.397 29.1059C14.1566 29.4657 13.815 29.746 13.4152 29.9116C13.0155 30.0772 12.5757 30.1205 12.1514 30.0361C11.727 29.9517 11.3373 29.7433 11.0313 29.4374C10.7254 29.1315 10.5171 28.7417 10.4327 28.3174C10.3483 27.8931 10.3916 27.4532 10.5571 27.0535C10.7227 26.6538 11.0031 26.3122 11.3628 26.0718C11.7225 25.8314 12.1455 25.7031 12.5781 25.7031C13.1583 25.7031 13.7147 25.9336 14.1249 26.3438C14.5352 26.7541 14.7656 27.3105 14.7656 27.8906ZM27.8906 27.8906C27.8906 28.3233 27.7623 28.7462 27.522 29.1059C27.2816 29.4657 26.94 29.746 26.5402 29.9116C26.1405 30.0772 25.7007 30.1205 25.2764 30.0361C24.852 29.9517 24.4623 29.7433 24.1563 29.4374C23.8504 29.1315 23.6421 28.7417 23.5577 28.3174C23.4733 27.8931 23.5166 27.4532 23.6821 27.0535C23.8477 26.6538 24.1281 26.3122 24.4878 26.0718C24.8475 25.8314 25.2705 25.7031 25.7031 25.7031C26.2833 25.7031 26.8397 25.9336 27.2499 26.3438C27.6602 26.7541 27.8906 27.3105 27.8906 27.8906ZM28.4252 17.7939C28.3564 18.172 28.157 18.5138 27.8619 18.7599C27.5669 19.006 27.1948 19.1408 26.8105 19.1406H10.1008L8.31113 9.29688H29.9701L28.4252 17.7939Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="width: 224.2px;">
+          <div class="popular__item popular-item popular-item--light">
+            <a href="https://vent2.designoffuture.ru/#" class="popular-item__theme">
+              Регуляторы скорости
+            </a>
+            <div class="popular-item__image">
+              <picture>
+                <source srcset="https://vent2.designoffuture.ru/img/products/04-2x.webp" media="(min-width: 1400px)">
+                <source srcset="https://vent2.designoffuture.ru/img/products/04.webp">
+                <img src="https://vent2.designoffuture.ru/img/products/04.png" srcset="https://vent2.designoffuture.ru/img/products/04-2x.png" alt="">
+              </picture>
+            </div>
+            <span class="popular-item__title">ATRE 1.5 трансформаторный</span>
+            <div class="popular-item__buttons">
+              <button class="popular-item__btn popular-item__btn--like btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.83333 30.625H29.1667C29.5534 30.625 29.9244 30.4714 30.1979 30.1979C30.4714 29.9244 30.625 29.5534 30.625 29.1667V5.83333C30.625 5.44656 30.4714 5.07563 30.1979 4.80214C29.9244 4.52865 29.5534 4.375 29.1667 4.375H5.83333C5.44656 4.375 5.07563 4.52865 4.80214 4.80214C4.52865 5.07563 4.375 5.44656 4.375 5.83333V29.1667C4.375 29.5534 4.52865 29.9244 4.80214 30.1979C5.07563 30.4714 5.44656 30.625 5.83333 30.625ZM11.3925 12.9894C11.765 12.6123 12.2086 12.313 12.6976 12.1087C13.1866 11.9044 13.7114 11.7992 14.2414 11.7992C14.7713 11.7992 15.2961 11.9044 15.7851 12.1087C16.2741 12.313 16.7177 12.6123 17.0902 12.9894L17.4971 13.3962L17.9025 12.9894C18.275 12.6123 18.7186 12.313 19.2076 12.1087C19.6966 11.9044 20.2214 11.7992 20.7514 11.7992C21.2813 11.7992 21.8061 11.9044 22.2951 12.1087C22.7841 12.313 23.2277 12.6123 23.6002 12.9894C23.9774 13.3617 24.2769 13.8053 24.4813 14.2944C24.6858 14.7834 24.791 15.3082 24.791 15.8382C24.791 16.3683 24.6858 16.893 24.4813 17.3821C24.2769 17.8711 23.9774 18.3147 23.6002 18.6871L17.4971 24.7917L11.391 18.6871C11.0143 18.3144 10.7152 17.8707 10.5111 17.3816C10.3071 16.8926 10.202 16.3679 10.2022 15.8379C10.2023 15.308 10.3076 14.7833 10.5119 14.2944C10.7162 13.8054 11.0155 13.3619 11.3925 12.9894Z"></path>
+                </svg>
+              </button>
+              <span class="popular-item__price">21 440</span>
+              <button class="popular-item__btn popular-item__btn--cart btn-reset">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.0447 8.4C30.9935 8.33844 30.9293 8.28891 30.8568 8.25489C30.7842 8.22087 30.7051 8.2032 30.625 8.20312H8.11289L7.19961 3.18281C7.1766 3.05705 7.11024 2.94332 7.01208 2.86139C6.91392 2.77947 6.79016 2.73452 6.6623 2.73438H3.28125C3.13621 2.73438 2.99711 2.79199 2.89455 2.89455C2.79199 2.99711 2.73438 3.13621 2.73438 3.28125C2.73438 3.42629 2.79199 3.56539 2.89455 3.66795C2.99711 3.77051 3.13621 3.82812 3.28125 3.82812H6.20566L7.12031 8.85938L9.77402 23.4582C9.89636 24.1254 10.2623 24.7233 10.8008 25.1357C10.2367 25.4993 9.79761 26.0272 9.54282 26.648C9.28802 27.2689 9.22974 27.953 9.37584 28.608C9.52193 29.2631 9.86538 29.8576 10.3599 30.3113C10.8543 30.7651 11.4761 31.0563 12.1412 31.1458C12.8064 31.2352 13.4829 31.1185 14.0797 30.8114C14.6765 30.5043 15.1647 30.0217 15.4786 29.4285C15.7925 28.8353 15.917 28.1601 15.8352 27.494C15.7534 26.8278 15.4694 26.2028 15.0213 25.7031H23.26C22.759 26.2632 22.4655 26.9782 22.4284 27.7287C22.3913 28.4792 22.613 29.2197 23.0562 29.8264C23.4995 30.4331 24.1376 30.8693 24.8639 31.0621C25.5901 31.2548 26.3606 31.1925 27.0464 30.8855C27.7322 30.5784 28.2919 30.0453 28.6318 29.3752C28.9718 28.7051 29.0715 27.9387 28.9142 27.2039C28.757 26.4691 28.3523 25.8106 27.7678 25.3384C27.1834 24.8661 26.4545 24.6088 25.7031 24.6094H12.4646C12.0807 24.6092 11.7089 24.4743 11.4141 24.2282C11.1193 23.9822 10.9202 23.6405 10.8514 23.2627L10.3045 20.2344H26.8105C27.4509 20.2345 28.071 20.0098 28.5627 19.5996C29.0544 19.1893 29.3865 18.6195 29.5012 17.9895L31.1637 8.84844C31.1779 8.76954 31.1747 8.68847 31.1541 8.61098C31.1336 8.53349 31.0962 8.46146 31.0447 8.4ZM14.7656 27.8906C14.7656 28.3233 14.6373 28.7462 14.397 29.1059C14.1566 29.4657 13.815 29.746 13.4152 29.9116C13.0155 30.0772 12.5757 30.1205 12.1514 30.0361C11.727 29.9517 11.3373 29.7433 11.0313 29.4374C10.7254 29.1315 10.5171 28.7417 10.4327 28.3174C10.3483 27.8931 10.3916 27.4532 10.5571 27.0535C10.7227 26.6538 11.0031 26.3122 11.3628 26.0718C11.7225 25.8314 12.1455 25.7031 12.5781 25.7031C13.1583 25.7031 13.7147 25.9336 14.1249 26.3438C14.5352 26.7541 14.7656 27.3105 14.7656 27.8906ZM27.8906 27.8906C27.8906 28.3233 27.7623 28.7462 27.522 29.1059C27.2816 29.4657 26.94 29.746 26.5402 29.9116C26.1405 30.0772 25.7007 30.1205 25.2764 30.0361C24.852 29.9517 24.4623 29.7433 24.1563 29.4374C23.8504 29.1315 23.6421 28.7417 23.5577 28.3174C23.4733 27.8931 23.5166 27.4532 23.6821 27.0535C23.8477 26.6538 24.1281 26.3122 24.4878 26.0718C24.8475 25.8314 25.2705 25.7031 25.7031 25.7031C26.2833 25.7031 26.8397 25.9336 27.2499 26.3438C27.6602 26.7541 27.8906 27.3105 27.8906 27.8906ZM28.4252 17.7939C28.3564 18.172 28.157 18.5138 27.8619 18.7599C27.5669 19.006 27.1948 19.1408 26.8105 19.1406H10.1008L8.31113 9.29688H29.9701L28.4252 17.7939Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- <button class="btn-reset popular__more">
+      <span>Ещё</span>
+      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M5 6.5498L12 11.5498L19 6.5498L19 8.9998L12 13.9998L5 8.9998L5 6.5498ZM5 12.4998L12 17.4998L19 12.4998L19 14.9498L12 19.9498L5 14.9498L5 12.4998Z"
+          fill="#437D9D" />
+      </svg>
+    </button> -->
+  </div>
+</section>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+  </div>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.module.js",
+					"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/"
+				}
+			}
+		</script>
+
+		<script type="module">
+
+			import * as THREE from 'three';
+
+			import TWEEN from 'three/addons/libs/tween.module.js';
+			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { CSS3DRenderer, CSS3DObject } from 'three/addons/renderers/CSS3DRenderer.js';
+
+			const table = [
+				'https://i.postimg.cc/9QRJC98f/IMG-7585.jpg',
+				'https://i.postimg.cc/P5gKxq9Q/IMG-7586.jpg',
+				'https://i.postimg.cc/MG15jS82/IMG-7587.jpg',
+				'https://i.postimg.cc/nzZk4PHs/IMG-7588.jpg',
+				'https://i.postimg.cc/qRLGjxR1/IMG-7589.jpg',
+				'https://i.postimg.cc/T13JS55f/IMG-7590.jpg',
+				'https://i.postimg.cc/zDxjh74B/IMG-7591.jpg',
+				'https://i.postimg.cc/Gtgx13vY/IMG-7592.jpg',
+				'https://i.postimg.cc/rFz9NWL9/IMG-7593.jpg'
+			];
+
+			let camera, scene, renderer;
+			let controls;
+			var vector = new THREE.Vector3();
+			const objects = [];
+			const targets = { table: [], sphere: [], helix: [], grid: [] };
+
+			init();
+			animate();
+
+			function init() {
+
+				camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
+				camera.position.z = 3000;
+
+				scene = new THREE.Scene();
+				//scene.fog = new THREE.Fog('0xFFFFFF', 100, 500);
+
+				// table
+
+				for ( let i = 0; i < table.length; i += 1 ) {
+
+					const element = document.createElement( 'div' );
+					element.className = 'element';
+					//element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+
+					const image = document.createElement( 'img' );
+					image.className = 'element';
+					image.draggable = 'false';
+					image.selectable = 'false';
+					image.src = table[i];
+					//number.textContent = ( i / 5 ) + 1;
+					//image.style.width = '150px';
+					//image.style.height = '80px';
+					
+					element.appendChild( image );
+
+					/**const symbol = document.createElement( 'div' );
+					symbol.className = 'symbol';
+					symbol.textContent = table[ i ];
+					element.appendChild( symbol );
+
+					const details = document.createElement( 'div' );
+					details.className = 'details';
+					details.innerHTML = table[ i + 1 ] + '<br>' + table[ i + 2 ];
+					element.appendChild( details );**/
+					element.id = 'p' + i; 
+					console.log(element.id);
+					const objectCSS = new CSS3DObject( element );
+					element.parent = objectCSS;
+					objectCSS.position.x = Math.random() * 4000 - 2000;
+					objectCSS.position.y = Math.random() * 4000 - 2000;
+					objectCSS.position.z = Math.random() * 4000 - 2000;
+					scene.add( objectCSS );
+
+					objects.push( objectCSS );
+
+					//
+
+					const object = new THREE.Object3D();
+					object.position.x = ( table[ i + 3 ] * 500 ) - 1330;
+					object.position.y = - ( table[ i + 4 ] * 180 ) + 1200;
+
+					targets.table.push( object );
+
+				}
+
+				// sphere
+
+				const vector = new THREE.Vector3();
+
+				for ( let i = 0, l = objects.length; i < l; i ++ ) {
+
+					const phi = Math.acos( - 1 + ( 2 * i ) / l );
+					const theta = Math.sqrt( l * Math.PI ) * phi;
+
+					const object = new THREE.Object3D();
+
+					object.position.setFromSphericalCoords( 800, phi, theta );
+
+					vector.copy( object.position ).multiplyScalar( 2 );
+
+					object.lookAt( vector );
+
+					targets.sphere.push( object );
+
+				}
+
+				// helix
+
+				for ( let i = 0, l = objects.length; i < l; i ++ ) {
+
+					const theta = i * 0.4 + Math.PI;
+					const y = - ( i * 8 ) + 200;
+
+					const object = new THREE.Object3D();
+
+					object.position.setFromCylindricalCoords( 2400, theta, y );
+
+					vector.x = object.position.x * 2;
+					vector.y = object.position.y;
+					vector.z = object.position.z * 2;
+
+					object.lookAt( vector );
+
+					targets.helix.push( object );
+
+				}
+
+				// grid
+
+				for ( let i = 0; i < objects.length; i ++ ) {
+
+					const object = new THREE.Object3D();
+
+					object.position.x = ( ( i % 5 ) * 400 ) - 800;
+					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 0;
+					object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
+
+					targets.grid.push( object );
+
+				}
+
+				//
+
+				renderer = new CSS3DRenderer();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				document.getElementById( 'container' ).appendChild( renderer.domElement );
+
+				//
+
+				controls = new OrbitControls( camera, renderer.domElement );
+				controls.minDistance = 4000;
+				controls.maxDistance = 4000;
+				controls.minPolarAngle = Math.PI/2;
+				controls.maxPolarAngle = Math.PI/2;
+				controls.enableDamping = true;
+				controls.dampingFactor = 0.05;
+				controls.rotateSpeed = 0.25;
+				controls.addEventListener( 'change', render );
+
+				transform( targets.helix, 1000 );
+
+				//
+
+				window.addEventListener( 'resize', onWindowResize );
+
+			}
+
+			function transform( targets, duration ) {
+
+				TWEEN.removeAll();
+
+				for ( let i = 0; i < objects.length; i ++ ) {
+
+					const object = objects[ i ];
+					const target = targets[ i ];
+
+					new TWEEN.Tween( object.position )
+						.to( { x: target.position.x, y: target.position.y, z: target.position.z }, Math.random() * duration + duration )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+					new TWEEN.Tween( object.rotation )
+						.to( { x: target.rotation.x, y: target.rotation.y, z: target.rotation.z }, Math.random() * duration + duration )
+						.easing( TWEEN.Easing.Exponential.InOut )
+						.start();
+
+				}
+
+				new TWEEN.Tween( this )
+					.to( {}, duration * 2 )
+					.onUpdate( render )
+					.start();
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+				render();
+
+			}
+			
+			
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				TWEEN.update();
+
+				controls.update();
+				
+				for (let i in targets.helix) {
+					
+					console.log('p' + i , targets.helix.length);
+					
+					document.getElementById('p' + i).style.opacity = 100 - (targets.helix[i].position.distanceTo(camera.position) - 1750) / 7 + '%';
+				
+				}
+
+				targets.helix[0].updateMatrixWorld();
+		
+				//document.documentElement.style.setProperty('--brightness', '1%');
+				
+				console.log(targets.helix[0].position.distanceTo(camera.position) - 500);
+
+			}
+
+			function render() {
+
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+	
+</body></html>
