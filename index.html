@@ -831,8 +831,8 @@
 
 				window.addEventListener( 'resize', onWindowResize );
 				window.addEventListener("wheel", (event) => {
-					spherical.theta = spherical.theta = controls.getAzimuthalAngle() + Math.PI/180;
-					controls.object.position.setFromSpherical(spherical);
+					//spherical.theta = spherical.theta = controls.getAzimuthalAngle() + Math.PI/180;
+					//controls.object.position.setFromSpherical(spherical);
 					event.preventDefault();
 					console.log('!');
 				}, {passive:false});
