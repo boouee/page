@@ -591,12 +591,12 @@ class OrbitControls extends EventDispatcher {
 			if ( event.deltaY < 0 ) {
 
 				//dollyIn( getZoomScale() );
-				rotateLeft( 2 * Math.PI * 1 / scope.domElement.clientHeight );
+				rotateLeft( 2 * Math.PI * 10 / scope.domElement.clientHeight );
 
 			} else if ( event.deltaY > 0 ) {
 
 				//dollyOut( getZoomScale() );
-				-rotateLeft( 2 * Math.PI * 1 / scope.domElement.clientHeight );
+				rotateLeft( - 2 * Math.PI * 10 / scope.domElement.clientHeight );
 			}
 
 			scope.update();
