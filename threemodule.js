@@ -56,7 +56,7 @@
 					document.getElementById('button').innerHTML = window.innerWidth / window.innerHeight;
 					if (window.innerWidth / window.innerHeight < 0.8) {
 						//image.style.width = "100%";
-						image.style.minWidth = "150vw";
+						image.style.minWidth = "200vw";
 						console.log(window.innerWidth / window.innerHeight, image.style.minWidth)
 					}
 					//number.textContent = ( i / 5 ) + 1;
