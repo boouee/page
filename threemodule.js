@@ -178,7 +178,7 @@
 			}
 
 			function onWindowResize() {
-				document.getElementById('button').innerHTML = screen.width + " - " + window.innerWidth;
+				document.getElementById('button').innerText = screen.width + " - " + window.innerWidth;
 				camera.aspect = renderer.domElement.innerWidth / renderer.domElement.innerHeight;
 				camera.updateProjectionMatrix();
 				//camera.aspect = canvas.clientWidth / canvas.clientHeight;
