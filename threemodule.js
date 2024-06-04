@@ -9,12 +9,9 @@
 				'https://i.postimg.cc/9QRJC98f/IMG-7585.jpg',
 				'https://i.postimg.cc/P5gKxq9Q/IMG-7586.jpg',
 				'https://i.postimg.cc/MG15jS82/IMG-7587.jpg',
-				'https://i.postimg.cc/nzZk4PHs/IMG-7588.jpg',
-				'https://i.postimg.cc/qRLGjxR1/IMG-7589.jpg',
-				'https://i.postimg.cc/T13JS55f/IMG-7590.jpg',
-				'https://i.postimg.cc/zDxjh74B/IMG-7591.jpg',
-				'https://i.postimg.cc/Gtgx13vY/IMG-7592.jpg',
-				'https://i.postimg.cc/rFz9NWL9/IMG-7593.jpg'
+				'https://i.postimg.cc/ZRtd88pt/image.png',
+				'https://i.postimg.cc/NMJdGCZ7/IMG-7613.jpg',
+				'https://i.postimg.cc/QCF0Fk3L/IMG-7614.jpg'
 			];
 
 			let camera, scene, renderer;
@@ -94,12 +91,12 @@
 
 				for ( let i = 0, l = objects.length; i < l; i ++ ) {
 
-					const theta = i * 0.4 + Math.PI;
-					const y = - ( i * 8 ) + 300;
+					const theta = i * (Math.PI * 2) / l;
+					const y = - ( 0 * 8 ) + 300;
 
 					const object = new THREE.Object3D();
 
-					object.position.setFromCylindricalCoords( 2400, theta, y );
+					object.position.setFromCylindricalCoords( 800, theta, y );
 
 					vector.x = object.position.x * 2;
 					vector.y = object.position.y;
