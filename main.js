@@ -310,6 +310,7 @@ window.addEventListener("DOMContentLoaded", () => {
       instance.on("slideChange", function (e) {
         if (instance.activeIndex == 0) {
           header.style.transform = null;
+          header.style.visibility = "hidden";
           header.classList.remove("logo-down");
           header.classList.remove("is-third");
           header.classList.remove("active");
