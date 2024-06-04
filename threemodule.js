@@ -51,7 +51,7 @@
 					image.draggable = 'false';
 					image.selectable = 'false';
 					image.src = table[i];
-					//image.style.minWidth = "
+					image.style.minWidth = "500px";
 					image.style.maxWidth = "90%";
 					if (window.innerWidth / window.innerHeight < 0.5) {
 						image.style.width = "100%";
