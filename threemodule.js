@@ -49,7 +49,7 @@
 					image.selectable = 'false';
 					image.src = table[i];
 					if (window.innerWidth / window.innerHeight < 0.5) {
-						image.style.width = "80%";
+						image.style.width = "100%";
 					}
 					//number.textContent = ( i / 5 ) + 1;
 					//image.style.width = '150px';
@@ -76,15 +76,7 @@
 					scene.add( objectCSS );
 
 					objects.push( objectCSS );
-
-					//
-
-					//const object = new THREE.Object3D();
-					//object.position.x = ( table[ i + 3 ] * 500 ) - 1330;
-					//object.position.y = - ( table[ i + 4 ] * 180 ) + 1200;
-
-					//targets.table.push( object );
-
+					
 				}
 
 				const vector = new THREE.Vector3();
@@ -98,7 +90,7 @@
 
 					const object = new THREE.Object3D();
 
-					object.position.setFromCylindricalCoords( 2400, theta, y );
+					object.position.setFromCylindricalCoords( 1200, theta, y );
 
 					vector.x = object.position.x * 2;
 					vector.y = object.position.y;
