@@ -48,7 +48,7 @@
 					image.draggable = 'false';
 					image.selectable = 'false';
 					image.src = table[i];
-					if (renderer.domElement.innerWidth / renderer.domElement.innerHeight < 0.5) {
+					if (window.innerWidth / window.innerHeight < 0.5) {
 						image.style.width = "80%";
 					}
 					//number.textContent = ( i / 5 ) + 1;
