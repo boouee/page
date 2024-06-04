@@ -56,6 +56,7 @@
 					if (window.innerWidth / window.innerHeight < 0.5) {
 						//image.style.width = "100%";
 						image.style.minWidth = "150vw";
+						console.log(window.innerWidth / window.innerHeight, image.style.minWidth)
 					}
 					//number.textContent = ( i / 5 ) + 1;
 					//image.style.width = '150px';
