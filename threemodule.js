@@ -29,7 +29,7 @@
 
 			function init() {
 				let aspect = window.innerWidth / window.innerHeight
-				if (window.innerWidth / window.innerHeight < 0.5){
+				if (window.innerWidth / window.innerHeight < 0.8){
 					aspect = 1;
 				}	
 				camera = new THREE.PerspectiveCamera( 40, aspect, 1, 10000 );
