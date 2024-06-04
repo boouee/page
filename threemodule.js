@@ -7,11 +7,17 @@
 
 			const table = [
 				'https://i.postimg.cc/9QRJC98f/IMG-7585.jpg',
-				'https://i.postimg.cc/P5gKxq9Q/IMG-7586.jpg',
 				'https://i.postimg.cc/MG15jS82/IMG-7587.jpg',
-				'https://i.postimg.cc/ZRtd88pt/image.png',
+				'https://i.postimg.cc/P5gKxq9Q/IMG-7586.jpg',
+				'https://i.postimg.cc/QCF0Fk3L/IMG-7614.jpg',
 				'https://i.postimg.cc/NMJdGCZ7/IMG-7613.jpg',
-				'https://i.postimg.cc/QCF0Fk3L/IMG-7614.jpg'
+				'https://i.postimg.cc/ZRtd88pt/image.png',
+				'https://i.postimg.cc/9QRJC98f/IMG-7585.jpg',
+				'https://i.postimg.cc/MG15jS82/IMG-7587.jpg',
+				'https://i.postimg.cc/P5gKxq9Q/IMG-7586.jpg',
+				'https://i.postimg.cc/QCF0Fk3L/IMG-7614.jpg',
+				'https://i.postimg.cc/NMJdGCZ7/IMG-7613.jpg',
+				'https://i.postimg.cc/ZRtd88pt/image.png'
 			];
 
 			let camera, scene, renderer;
@@ -92,11 +98,11 @@
 				for ( let i = 0, l = objects.length; i < l; i ++ ) {
 
 					const theta = i * (Math.PI * 2) / l;
-					const y = 250;
+					const y = 200;
 
 					const object = new THREE.Object3D();
 
-					object.position.setFromCylindricalCoords( 800, theta, y );
+					object.position.setFromCylindricalCoords( 1800, theta, y );
 
 					vector.x = object.position.x * 2;
 					vector.y = object.position.y;
@@ -117,8 +123,8 @@
 				//
 
 				controls = new OrbitControls( camera, renderer.domElement );
-				controls.minDistance = 2800;
-				controls.maxDistance = 2800;
+				controls.minDistance = 3600;
+				controls.maxDistance = 3600;
 				controls.minPolarAngle = Math.PI/2;
 				controls.maxPolarAngle = Math.PI/2;
 				controls.enableDamping = true;
