@@ -57,6 +57,7 @@
 					if (screen.width / screen.height < 0.8) {
 						//image.style.width = "100%";
 						element.style.width = "90rem";
+						image.style.width = "inherit";
 						console.log(window.innerWidth / window.innerHeight, window.innerWidth, image.style.minWidth)
 					}
 					//number.textContent = ( i / 5 ) + 1;
