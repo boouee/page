@@ -200,7 +200,7 @@
 					
 					//console.log('p' + i , targets.helix.length);
 					
-					document.getElementById('p' + i).style.opacity = 100 - (targets.helix[i].position.distanceTo(camera.position) - 2250) / 7 + '%';
+					//document.getElementById('p' + i).style.opacity = 100 - (targets.helix[i].position.distanceTo(camera.position) - 2250) / 7 + '%';
 				
 				}
 
