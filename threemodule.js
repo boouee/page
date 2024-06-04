@@ -92,7 +92,7 @@
 				for ( let i = 0, l = objects.length; i < l; i ++ ) {
 
 					const theta = i * (Math.PI * 2) / l;
-					const y = - ( 0 * 8 ) + 300;
+					const y = 250;
 
 					const object = new THREE.Object3D();
 
