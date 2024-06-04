@@ -51,11 +51,11 @@
 					image.draggable = 'false';
 					image.selectable = 'false';
 					image.src = table[i];
-					image.style.minWidth = "500px";
-					image.style.maxWidth = "90%";
+					//image.style.minWidth = "500px";
+					//image.style.maxWidth = "90%";
 					if (window.innerWidth / window.innerHeight < 0.5) {
-						image.style.width = "100%";
-						image.style.minWidth = "90%";
+						//image.style.width = "100%";
+						image.style.minWidth = "150vw";
 					}
 					//number.textContent = ( i / 5 ) + 1;
 					//image.style.width = '150px';
