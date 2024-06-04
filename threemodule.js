@@ -43,11 +43,11 @@
 				for ( let i = 0; i < table.length; i += 1 ) {
 
 					const element = document.createElement( 'div' );
-					element.className = 'element';
+					element.className = '_element';
 					//element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
 
 					const image = document.createElement( 'img' );
-					image.className = 'element';
+					image.className = '_element';
 					image.draggable = 'false';
 					image.selectable = 'false';
 					image.src = table[i];
