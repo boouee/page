@@ -76,15 +76,13 @@
 
 					//
 
-					const object = new THREE.Object3D();
-					object.position.x = ( table[ i + 3 ] * 500 ) - 1330;
-					object.position.y = - ( table[ i + 4 ] * 180 ) + 1200;
+					//const object = new THREE.Object3D();
+					//object.position.x = ( table[ i + 3 ] * 500 ) - 1330;
+					//object.position.y = - ( table[ i + 4 ] * 180 ) + 1200;
 
-					targets.table.push( object );
+					//targets.table.push( object );
 
 				}
-
-				// sphere
 
 				const vector = new THREE.Vector3();
 
