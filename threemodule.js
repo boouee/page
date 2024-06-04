@@ -30,7 +30,7 @@
 					aspect = 1;
 				}	
 				camera = new THREE.PerspectiveCamera( 40, 2, 1, 10000 );
-				camera.position.z = 2000;
+				camera.position.z = 3000;
 
 				scene = new THREE.Scene();
 				//scene.fog = new THREE.Fog('0xFFFFFF', 100, 500);
@@ -117,8 +117,8 @@
 				//
 
 				controls = new OrbitControls( camera, renderer.domElement );
-				controls.minDistance = 4500;
-				controls.maxDistance = 4500;
+				controls.minDistance = 2800;
+				controls.maxDistance = 2800;
 				controls.minPolarAngle = Math.PI/2;
 				controls.maxPolarAngle = Math.PI/2;
 				controls.enableDamping = true;
