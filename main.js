@@ -331,7 +331,7 @@ window.addEventListener("DOMContentLoaded", () => {
             header.style.transform = "translateY(-100%)";
             menuBtn.removeEventListener("click", progressMenu);
             menuBtn.addEventListener("click", defaultMenu);
-          {
+        } else {
           header.style.transform = null;
           menuBtn.removeEventListener("click", progressMenu);
           menuBtn.addEventListener("click", defaultMenu);
