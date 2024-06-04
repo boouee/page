@@ -53,10 +53,10 @@
 					image.src = table[i];
 					//image.style.minWidth = "500px";
 					//image.style.maxWidth = "90%";
-					document.getElementById('button').innerHTML = window.innerWidth / window.innerHeight;
-					if (window.innerWidth / window.innerHeight < 0.8) {
+					document.getElementById('button').innerHTML = screen.width / screen.height;
+					if (screen.width / screen.height < 0.8) {
 						//image.style.width = "100%";
-						image.style.minWidth = "200vw";
+						image.style.minWidth = screen.width * 0.9;
 						console.log(window.innerWidth / window.innerHeight, image.style.minWidth)
 					}
 					//number.textContent = ( i / 5 ) + 1;
