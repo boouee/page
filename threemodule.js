@@ -57,7 +57,7 @@
 					if (screen.width / screen.height < 0.8) {
 						//image.style.width = "100%";
 						image.style.minWidth = screen.width * 0.9 + "px";
-						console.log(window.innerWidth / window.innerHeight, image.style.minWidth)
+						console.log(window.innerWidth / window.innerHeight, window.innerWidth, image.style.minWidth)
 					}
 					//number.textContent = ( i / 5 ) + 1;
 					//image.style.width = '150px';
@@ -178,7 +178,7 @@
 			}
 
 			function onWindowResize() {
-				document.getElementById('button').innerHTML = window.innerWidth / window.innerHeight;
+				document.getElementById('button').innerHTML = screen.width + " - " + window.innerWidth;
 				camera.aspect = renderer.domElement.innerWidth / renderer.domElement.innerHeight;
 				camera.updateProjectionMatrix();
 				//camera.aspect = canvas.clientWidth / canvas.clientHeight;
