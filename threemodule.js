@@ -53,6 +53,7 @@
 					image.src = table[i];
 					//image.style.minWidth = "500px";
 					//image.style.maxWidth = "90%";
+					document.getElementById('button').innerHTML = window.innerWidth / window.innerHeight;
 					if (window.innerWidth / window.innerHeight < 0.5) {
 						//image.style.width = "100%";
 						image.style.minWidth = "150vw";
@@ -177,12 +178,12 @@
 			}
 
 			function onWindowResize() {
-
+				document.getElementById('button').innerHTML = window.innerWidth / window.innerHeight;
 				camera.aspect = renderer.domElement.innerWidth / renderer.domElement.innerHeight;
 				camera.updateProjectionMatrix();
 				//camera.aspect = canvas.clientWidth / canvas.clientHeight;
 				renderer.setSize( window.innerWidth, window.innerHeight );
-
+				
 				render();
 
 			}
