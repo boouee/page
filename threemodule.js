@@ -32,7 +32,7 @@
 				if (window.innerWidth / window.innerHeight < 0.8){
 					aspect = 1;
 				}	
-				camera = new THREE.PerspectiveCamera( 40, aspect, 1, 10000 );
+				camera = new THREE.PerspectiveCamera( 40, 2, 1, 10000 );
 				camera.position.z = 3000;
 
 				scene = new THREE.Scene();
@@ -180,7 +180,7 @@
 
 			function onWindowResize() {
 				document.getElementById('button').innerText = screen.width + " - " + window.innerWidth;
-				camera.aspect = renderer.domElement.innerWidth / renderer.domElement.innerHeight;
+				//camera.aspect = renderer.domElement.innerWidth / renderer.domElement.innerHeight;
 				camera.updateProjectionMatrix();
 				//camera.aspect = canvas.clientWidth / canvas.clientHeight;
 				renderer.setSize( window.innerWidth, window.innerHeight );
