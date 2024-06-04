@@ -327,7 +327,11 @@ window.addEventListener("DOMContentLoaded", () => {
           header.style.transform = "translateY(-110%)";
           menuBtn.removeEventListener("click", defaultMenu);
           menuBtn.addEventListener("click", progressMenu);
-        } else {
+        } else if (instance.activeIndex == 0) {
+            header.style.transform = "translateY(-100%)";
+            menuBtn.removeEventListener("click", progressMenu);
+            menuBtn.addEventListener("click", defaultMenu);
+          {
           header.style.transform = null;
           menuBtn.removeEventListener("click", progressMenu);
           menuBtn.addEventListener("click", defaultMenu);
