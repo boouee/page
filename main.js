@@ -309,8 +309,8 @@ window.addEventListener("DOMContentLoaded", () => {
     if (instance && window.matchMedia("(min-width: 1025px").matches) {
       instance.on("slideChange", function (e) {
         if (instance.activeIndex == 0) {
-          header.style.transform = null;
-          header.style.visibility = "hidden";
+          header.style.transform = "translateY(-100%)";
+          //header.style.visibility = "hidden";
           header.classList.remove("logo-down");
           header.classList.remove("is-third");
           header.classList.remove("active");
