@@ -56,7 +56,7 @@
 					document.getElementById('button').innerHTML = screen.width / screen.height;
 					if (screen.width / screen.height < 0.8) {
 						//image.style.width = "100%";
-						image.style.minWidth = screen.width * 0.9 + "px";
+						element.style.width = "90rem";
 						console.log(window.innerWidth / window.innerHeight, window.innerWidth, image.style.minWidth)
 					}
 					//number.textContent = ( i / 5 ) + 1;
