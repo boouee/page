@@ -56,7 +56,7 @@
 					document.getElementById('button').innerHTML = screen.width / screen.height;
 					if (screen.width / screen.height < 0.8) {
 						//image.style.width = "100%";
-						element.style.minWidth = "90rem";
+						element.style.minWidth = "150rem";
 						image.style.width = "90rem";
 						console.log(window.innerWidth / window.innerHeight, window.innerWidth, image.style.minWidth)
 					}
