@@ -30,7 +30,7 @@
 					aspect = 1;
 				}	
 				camera = new THREE.PerspectiveCamera( 40, 2, 1, 10000 );
-				camera.position.z = 3000;
+				camera.position.z = 2000;
 
 				scene = new THREE.Scene();
 				//scene.fog = new THREE.Fog('0xFFFFFF', 100, 500);
@@ -122,11 +122,6 @@
 				controls.minPolarAngle = Math.PI/2;
 				controls.maxPolarAngle = Math.PI/2;
 				controls.enableDamping = true;
-				controls.mouseButtons = {
-					LEFT: THREE.MOUSE.ROTATE,
-					MIDDLE: THREE.MOUSE.ROTATE,
-					RIGHT: THREE.MOUSE.PAN
-				}
 				controls.dampingFactor = 0.05;
 				controls.rotateSpeed = 0.25;
 				controls.addEventListener( 'change', render );
