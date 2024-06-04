@@ -22,7 +22,7 @@
 			var vector = new THREE.Vector3();
 			const objects = [];
 			const targets = { table: [], sphere: [], helix: [], grid: [] };
-			window.onscroll = () => window.scroll(0, 0);
+			//window.onscroll = () => window.scroll(0, 0);
 			
 			init();
 			animate();
@@ -48,6 +48,9 @@
 					image.draggable = 'false';
 					image.selectable = 'false';
 					image.src = table[i];
+					if (renderer.domElement.innerWidth / renderer.domElement.innerHeight < 0.5) {
+						image.style.width = "80%";
+					}
 					//number.textContent = ( i / 5 ) + 1;
 					//image.style.width = '150px';
 					//image.style.height = '80px';
