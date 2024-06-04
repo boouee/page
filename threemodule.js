@@ -54,7 +54,7 @@
 					//image.style.minWidth = "500px";
 					//image.style.maxWidth = "90%";
 					document.getElementById('button').innerHTML = window.innerWidth / window.innerHeight;
-					if (window.innerWidth / window.innerHeight < 0.5) {
+					if (window.innerWidth / window.innerHeight < 0.8) {
 						//image.style.width = "100%";
 						image.style.minWidth = "150vw";
 						console.log(window.innerWidth / window.innerHeight, image.style.minWidth)
