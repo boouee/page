@@ -28,8 +28,11 @@
 			animate();
 
 			function init() {
-
-				camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
+				let aspect = window.innerWidth / window.innerHeight
+				if (window.innerWidth / window.innerHeight < 0.5){
+					aspect = 1;
+				}	
+				camera = new THREE.PerspectiveCamera( 40, aspect, 1, 10000 );
 				camera.position.z = 3000;
 
 				scene = new THREE.Scene();
