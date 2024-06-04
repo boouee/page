@@ -93,7 +93,7 @@
 
 					const object = new THREE.Object3D();
 
-					object.position.setFromCylindricalCoords( 1200, theta, y );
+					object.position.setFromCylindricalCoords( 2400, theta, y );
 
 					vector.x = object.position.x * 2;
 					vector.y = object.position.y;
