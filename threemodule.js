@@ -123,7 +123,7 @@
 				controls.maxPolarAngle = Math.PI/2;
 				controls.enableDamping = true;
 				controls.dampingFactor = 0.05;
-				controls.rotateSpeed = 0.25;
+				controls.rotateSpeed = 0.35;
 				controls.addEventListener( 'change', render );
 				var spherical = new THREE.Spherical();
 				spherical.radius = controls.getDistance();
@@ -195,7 +195,7 @@
 					
 					//console.log('p' + i , targets.helix.length);
 					
-					//document.getElementById('p' + i).style.opacity = 100 - (targets.helix[i].position.distanceTo(camera.position) - 2250) / 7 + '%';
+					document.getElementById('p' + i).style.opacity = 100 - (targets.helix[i].position.distanceTo(camera.position) - 2250) / 4 + '%';
 				
 				}
 
