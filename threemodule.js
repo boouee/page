@@ -88,23 +88,6 @@
 
 				const vector = new THREE.Vector3();
 
-				for ( let i = 0, l = objects.length; i < l; i ++ ) {
-
-					const phi = Math.acos( - 1 + ( 2 * i ) / l );
-					const theta = Math.sqrt( l * Math.PI ) * phi;
-
-					const object = new THREE.Object3D();
-
-					object.position.setFromSphericalCoords( 800, phi, theta );
-
-					vector.copy( object.position ).multiplyScalar( 2 );
-
-					object.lookAt( vector );
-
-					targets.sphere.push( object );
-
-				}
-
 				// helix
 
 				for ( let i = 0, l = objects.length; i < l; i ++ ) {
@@ -126,26 +109,12 @@
 
 				}
 
-				// grid
-
-				for ( let i = 0; i < objects.length; i ++ ) {
-
-					const object = new THREE.Object3D();
-
-					object.position.x = ( ( i % 5 ) * 400 ) - 800;
-					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 0;
-					object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
-
-					targets.grid.push( object );
-
-				}
-
 				//
 
 				renderer = new CSS3DRenderer();
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				document.getElementById( 'container' ).appendChild( renderer.domElement );
-				onscroll = (event) => { scene.rotation.y += 1; console.log('scrolling') };
+				//onscroll = (event) => { scene.rotation.y += 1; console.log('scrolling') };
 				//
 
 				controls = new OrbitControls( camera, renderer.domElement );
@@ -209,9 +178,9 @@
 
 			function onWindowResize() {
 
-				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.aspect = renderer.domElement.innerWidth / renderer.domElement.innerHeight;
 				camera.updateProjectionMatrix();
-
+				//camera.aspect = canvas.clientWidth / canvas.clientHeight;
 				renderer.setSize( window.innerWidth, window.innerHeight );
 
 				render();
