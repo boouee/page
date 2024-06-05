@@ -52,7 +52,7 @@
 						image.style.height = "45rem";
 						image.style.width = "auto";
 						if (screen.width / screen.height < 0.8) {
-							image.style.width = "100%";
+							image.style.width = "45rem";
 							//element.style.minWidth = "90rem";
 							//image.style.width = "90rem";
 							console.log(window.innerWidth / window.innerHeight, window.innerWidth, image.style.minWidth)
