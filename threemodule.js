@@ -49,7 +49,7 @@
 						image.draggable = 'false';
 						image.selectable = 'false';
 						image.src = table[i];
-						image.style.height = "45rem";
+						//image.style.height = "45rem";
 						if (screen.width / screen.height < 0.8) {
 							//image.style.width = "100%";
 							element.style.minWidth = "90rem";
