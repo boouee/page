@@ -53,6 +53,7 @@
 						image.style.width = "auto";
 						if (screen.width / screen.height < 0.8) {
 							//image.style.width = "70rem";
+							image.style.height = null;
 							element.style.width = "40rem";
 							
 							//image.style.width = "90rem";
