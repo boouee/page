@@ -49,11 +49,11 @@
 						image.draggable = 'false';
 						image.selectable = 'false';
 						image.src = table[i];
-						image.style.height = "45rem";
-						image.style.width = "auto";
+						element.style.height = "45rem";
+						element.style.width = "auto";
 						if (screen.width / screen.height < 0.8) {
 							//image.style.width = "70rem";
-							image.style.height = null;
+							element.style.height = "auto";
 							element.style.width = "40rem";
 							
 							//image.style.width = "90rem";
