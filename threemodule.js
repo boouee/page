@@ -50,7 +50,9 @@
 						image.selectable = 'false';
 						image.src = table[i];
 						element.style.height = "45rem";
+						image.style.height = "45rem";
 						element.style.width = "auto";
+						image.style.width = "auto";
 						//if (screen.width / screen.height < 0.8) {
 						if (window.innerWidth / window.innerHeight < 0.8) {
 							//image.style.width = "70rem";
