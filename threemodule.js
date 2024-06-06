@@ -51,7 +51,8 @@
 						image.src = table[i];
 						element.style.height = "45rem";
 						element.style.width = "auto";
-						if (screen.width / screen.height < 0.8) {
+						//if (screen.width / screen.height < 0.8) {
+						if (window.innerWidth / window.innerHeight < 0.8) {
 							//image.style.width = "70rem";
 							element.style.height = "auto";
 							element.style.width = "40rem";
