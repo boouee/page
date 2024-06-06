@@ -58,6 +58,8 @@
 							//image.style.width = "70rem";
 							element.style.height = "auto";
 							element.style.width = "50rem";
+							image.style.height = "auto";
+							image.style.width = "50rem";
 							document.getElementById('title').style.width = "90%";
 							//image.style.width = "90rem";
 							console.log(window.innerWidth / window.innerHeight, window.innerWidth, image.style.minWidth)
